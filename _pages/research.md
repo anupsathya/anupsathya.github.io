@@ -1,7 +1,7 @@
 ---
-title: Resume
-subtitle: Duet is a beautiful Jekyll portfolio theme designed to showcase your work in style. Perfect for designers, artists, photographers and developers to use for their portfolio website.
-description: 
+title: Research
+subtitle: You can find the papers I've written below. The projects are detailed in the Projects page.
+description:
 featured_image: /images/demo/demo-landscape.jpg
 ---
 
