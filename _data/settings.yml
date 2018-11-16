@@ -16,8 +16,6 @@ menu_settings:
       url: 'https://drive.google.com/open?id=1_IiBGC99fCZ0N91DzDkMUpFN6mLAEggL'
     - title: 'Research'
       url: '/research'
-    - title: 'About'
-      url: '/about'
 
 footer_settings:
   logo_image: /images/facelogo.svg
