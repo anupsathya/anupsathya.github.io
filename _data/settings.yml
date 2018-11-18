@@ -14,6 +14,8 @@ menu_settings:
       url: '/blog'
     - title: 'Research'
       url: '/research'
+    - title: 'Email'
+      url: 'mailto:anup.bethany@gmail.com'
 
 footer_settings:
   logo_image: /images/facelogo.svg
