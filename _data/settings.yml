@@ -1,6 +1,6 @@
 basic_settings:
   site_title: Anup S
-  favicon_image: /images/facelogo.svg
+  favicon_image: /images/faceicon.png
 
 header_settings:
   logo_image: /images/facelogo.svg
@@ -11,9 +11,7 @@ menu_settings:
     - title: 'Projects'
       url: '/'
     - title: 'Blog'
-      url: 'https://medium.com/@anupsathya'
-    - title: 'Resume'
-      url: 'https://drive.google.com/open?id=1_IiBGC99fCZ0N91DzDkMUpFN6mLAEggL'
+      url: '/blog'
     - title: 'Research'
       url: '/research'
 
@@ -41,7 +39,7 @@ social_settings:
   google-plus_url: ''
   vimeo_url: ''
   pinterest_url: ''
-  medium_url: ''
+  medium_url: 'https://www.medium.com/@anupsathya'
   quora_url: ''
   amazon_url: ''
   apple_url: ''
@@ -61,7 +59,7 @@ social_settings:
   linkedin_url: 'https://www.linkedin.com/in/anupsathya/'
 
 color_settings:
-  background_color: '#e6e6e6'
+  background_color: '#ffffff'
   background_alt_color: '#f4f5f6'
   text_dark_color: '#2A2F36'
   text_medium_color: '#6C7A89'

@@ -1,34 +1,36 @@
 ---
 title: Research
-subtitle: You can find the papers I've written below. The projects are detailed in the Projects page.
+subtitle: The papers that I've authored/co-authored can be found here.
 description:
-featured_image: /images/demo/demo-landscape.jpg
+featured_image:
+---
+---
+#### Realtime On-chip Wireless Waveform Monitoring
+
+**Authors** - Anup S, Sowmiya Balaji, Amishi Gupta, Suresh Padmanabhan
+
+**Presented at** -  IEEE ICACCI '18
+
+<a href="https://drive.google.com/file/d/1Cfr6BhwU26pqRAw9NkA7nkEwnq_zkBI3/view" class="button button--light">View Paper</a>
+
 ---
 
-![](/images/demo/demo-landscape.jpg)
+#### Visual Positioning System for Automated Indoor/Outdoor Navigation
 
-## Features
+**Authors** - Anup S, Abhinav Goal, Suresh Padmanabhan
 
-We've packed Duet full of powerful features to help showcase your work:
+**Presented at** - IEEE TENCON '17
 
-* Beautiful, minimal design
-* Two-column masonry grid layout
-* Responsive – works perfectly on all devices
-* Portfolio post type
-* Blog with pagination
-* Sleek Ajax navigation and page transitions
-* Unique 'gallery' feature for image grids and carousels
-* Built-in contact form with Formspree integration
-* Full markdown support and code highlighting
-* Social media icons
-* Fast page rendering
-* Built with SEO best practices in mind
-* Customize everything – colors, spacing, fonts, sizes etc. – via a simple settings file
-* Works with GitHub Pages
-* Updated and supported by the developers
+<a href="https://ieeexplore.ieee.org/document/8228008" class="button button--light">View Paper</a>
 
-## Get Duet
+---
 
-Duet is created and supported by [Jekyll Themes](https://jekyllthemes.io), and is available for $29.
+#### Predictive Handover Management in Heterogeneous Wireless Networks
 
-<a href="https://jekyllthemes.io/theme/duet-portfolio-jekyll-theme" class="button button--large">Get This Theme</a>
+**Authors** - Abhinav Goel, Anup S, Aditya Suresh Prabhu, Suresh Padmanabhan
+
+*Not submitted for presentation*
+
+<a href="https://drive.google.com/open?id=14PY2zrLDX5wLOivzF-HLLZm_JCar8sFz" class="button button--light">View Paper</a>
+
+---

@@ -157,6 +157,16 @@ $grid-spacing: {{ site.data.settings.grid_settings.grid_spacing }}px;
 @import "_includes/_portfolio";
 @import "_includes/_blog";
 
-.hover_img a { position:relative; }
-.hover_img a span { position:absolute; display:none; z-index:99; }
-.hover_img a:hover span { display:block; }
+.hover_img a {
+  position: relative;
+  span {
+    position: absolute;
+    display: none;
+    z-index: 99;
+  }
+  &:hover span {
+    display: block;
+  }
+}
+hover img { display:none; }
+hover:hover img { position:sticky; display:block; width:300px; }

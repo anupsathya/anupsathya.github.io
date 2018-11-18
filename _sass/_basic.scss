@@ -168,13 +168,13 @@ blockquote {
 	@include mq(tabletp) {
 		border-left-width: 3px;
 		padding: 15px 0 15px 30px;
-		font-size: $blockquote-medium;
+		font-size: $blockquote-small;
 	}
 
 	@include mq(laptop) {
 		border-left-width: 4px;
 		padding: 20px 0 20px 40px;
-		font-size: $blockquote-large;
+		font-size: $blockquote-small;
 	}
 
 	p {
@@ -184,11 +184,11 @@ blockquote {
 		line-height: $blockquote-lineheight;
 
 		@include mq(tabletp) {
-			font-size: $blockquote-medium;
+			font-size: $blockquote-small;
 		}
 
 		@include mq(laptop) {
-			font-size: $blockquote-large;
+			font-size: $blockquote-small;
 		}
 	}
 }
