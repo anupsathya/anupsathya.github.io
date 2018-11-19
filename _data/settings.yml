@@ -16,8 +16,8 @@ menu_settings:
       url: '/research'
 
 footer_settings:
-  logo_image: /images/facelogo.svg
-  logo_width: 80
+  logo_image: /images/justface.svg
+  logo_width: 40
   footer_tagline:
 
 grid_settings:
