@@ -3,8 +3,8 @@ basic_settings:
   favicon_image: /images/faceicon.png
 
 header_settings:
-  logo_image: /images/facelogo.svg
-  logo_width: 80
+  logo_image: /images/justface.svg
+  logo_width: 40
 
 menu_settings:
   menu_items:
@@ -59,7 +59,7 @@ social_settings:
   linkedin_url: 'https://www.linkedin.com/in/anupsathya/'
 
 color_settings:
-  background_color: '#e6e6e6'
+  background_color: '#f1f1f1'
   background_alt_color: '#f4f5f6'
   text_dark_color: '#2A2F36'
   text_medium_color: '#6C7A89'

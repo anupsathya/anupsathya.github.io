@@ -178,17 +178,17 @@ blockquote {
 	}
 
 	p {
-		font-size: $blockquote-small;
+		font-size: 18px;
 		font-weight: $blockquote-weight;
 		letter-spacing: $blockquote-spacing;
 		line-height: $blockquote-lineheight;
 
 		@include mq(tabletp) {
-			font-size: $blockquote-small;
+			font-size: 18px;
 		}
 
 		@include mq(laptop) {
-			font-size: $blockquote-small;
+			font-size: 18px;
 		}
 	}
 }
