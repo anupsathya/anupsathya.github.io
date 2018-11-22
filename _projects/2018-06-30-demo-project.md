@@ -11,7 +11,7 @@ featured_image: '/images/Dope/DopeScope.png'
 
 **Role:** Group Leader
 
-**Skills picked up:** PCB Layout Design, Embedded Systems Design, DIY Reflow Soldering, *Upverter* (Layout Design Tool), SoC programming,
+**Skills picked up:** PCB Layout Design, Embedded Systems Design, DIY Reflow Soldering, *Upverter* (Layout Design Tool), SoC programming
 
 **Publications:** [Realtime On-chip Waveform Monitoring](https://drive.google.com/file/d/1Cfr6BhwU26pqRAw9NkA7nkEwnq_zkBI3/view) at IEEE ICACCI 2018.
 
