@@ -17,7 +17,7 @@ featured_image: '/images/Dope/DopeScope.jpg'
 
 DopeScope is an attempt at delivering an inexpensive, un-intimidating scope for Universities in India with poor scientific infrastructure.
 
-DopeScope connects to your phone/computer over WiFi and the browser acts as a display device. The signal processing computation is also done on the browser using its higher computational power rather than relying on an expensive DSP chip.
+DopeScope connects to your phone/computer over WiFi and the browser acts as a display device. The signal processing computation is also done on the browser using its higher computational power rather than relying on an expensive DSP chip and it only costs $16.
 
 An [employability report](https://www.aspiringminds.com/sites/default/files/National%20Employability%20Report%20-%20Engineers%20Annual%20Report%202016.pdf) conducted in India, concluded that 80% of all engineers in India are unemployable. These numbers were much lower for the Universities that were ranked outside the top 100. After asking a couple of students in Electrical and Electronics Engineering, about why they felt like they lacked practical skills, the most common answer we got was something like this,
 
