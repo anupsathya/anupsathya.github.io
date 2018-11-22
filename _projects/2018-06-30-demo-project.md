@@ -1,100 +1,40 @@
 ---
-title: 'Demo Project'
-subtitle: 'This is a demo'
+title: 'DopeScope'
+subtitle: 'An inexpensive scope for hobbyists and learners'
 date: 2018-06-30 00:00:00
 description: This page is a demo that shows everything you can do inside portfolio and blog posts.
-featured_image: '/images/demo/demo-square.jpg'
+featured_image: '/images/Dope/DopeScope.png'
 ---
+![](/images/Dope/Dope.jpg)
 
-![](/images/demo/demo-landscape.jpg)
+**Team Members:** Anup S, Sowmiya Balaji, Amishi Gupta
 
-## Demo content
+**Role:** Group Leader
 
-This page is a demo that shows everything you can do inside portfolio and blog posts.
+**Skills picked up:** PCB Layout Design, Embedded Systems Design, DIY Reflow Soldering, *Upverter* (Layout Design Tool), SoC programming,
 
-We've included everything you need to create engaging posts about your work, and show off your case studies in a beautiful way.
+**Publications:** [Realtime On-chip Waveform Monitoring](https://drive.google.com/file/d/1Cfr6BhwU26pqRAw9NkA7nkEwnq_zkBI3/view) at IEEE ICACCI 2018.
 
-**Obviously,** we’ve styled up *all the basic* text formatting options [available in markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+DopeScope is an attempt at delivering an inexpensive, un-intimidating scope for Universities in India with poor scientific infrastructure.
 
-You can create lists:
+An [employability report](https://www.aspiringminds.com/sites/default/files/National%20Employability%20Report%20-%20Engineers%20Annual%20Report%202016.pdf) conducted in India, concluded that 80% of all engineers in India are unemployable. These numbers were much lower for the Universities that were ranked outside the top 100. After asking a couple of students in Electrical and Electronics Engineering, about why they felt like they lacked practical skills, the most common answer we got was something like this,
 
-* Simple bulleted lists
-* Like this one
-* Are cool
+> "We don't feel comfortable using equipment in the lab as it's too expensive. We're often restricted by lab assistants and professors from truly experimenting. "
 
-And:
+Although scopes are very robust, we couldn't go around convincing students that it's actually hard to break one, so we decided to make a cheap one. We also added a smattering of other features to make things interesting for hobbyists.
 
-1. Numbered lists
-2. Like this other one
-3. Are great too
+You can find complete details in our dissertation below. You can also download Gerber Files using the button below and order your own boards.
 
-You can also add blockquotes, which are shown at a larger width to help break up the layout and draw attention to key parts of your content:
+This project was part of our [undergraduate dissertation](https://drive.google.com/open?id=1Sa7BmOJW-DWgcIFpFfWgQkamclIgIReD).
 
-> “Simple can be harder than complex: You have to work hard to get your thinking clean to make it simple. But it’s worth it in the end because once you get there, you can move mountains.”
+<a href="https://drive.google.com/open?id=18vuQufQd7FaBADrs-0w5_414OdRiyDfC" class="button button--light">Gerber Files</a>
 
-The theme also supports markdown tables:
-
-| Item                 | Author        | Supports tables? | Price |
-|----------------------|---------------|------------------|-------|
-| Duet Jekyll Theme    | Jekyll Themes | Yes              | $39   |
-| Index Jekyll Theme   | Jekyll Themes | Yes              | $39   |
-| Journal Jekyll Theme | Jekyll Themes | Yes              | $39   |
-
-You can throw in some horizontal rules too:
-
----
-
-### Image galleries
-
-Here's a really neat custom feature we added – galleries:
-
-<div class="gallery" data-columns="3">
-	<img src="/images/demo/demo-portrait.jpg">
-	<img src="/images/demo/demo-landscape.jpg">
-	<img src="/images/demo/demo-square.jpg">
-	<img src="/images/demo/demo-landscape-2.jpg">
+<div class="gallery" data-columns="4">
+	<img src="/images/Dope/schematic.png">
+	<img src="/images/Dope/osci.png">
+	<img src="/images/Dope/solder.jpg">
+	<img src="/images/Dope/reflow.jpg">
+	<img src="/images/Dope/prototype.jpg">
+	<img src="/images/Dope/hand.jpg">
+	<img src="/images/Dope/hand2.jpg">
 </div>
-
-Inspired by the Galleries feature from WordPress, we've made it easy to create grid layouts for your images. Just use a bit of simple HTML in your post to create a masonry grid image layout:
-
-```html
-<div class="gallery" data-columns="3">
-    <img src="/images/demo/demo-portrait.jpg">
-    <img src="/images/demo/demo-landscape.jpg">
-    <img src="/images/demo/demo-square.jpg">
-    <img src="/images/demo/demo-landscape-2.jpg">
-</div>
-```
-
-*See what we did there? Code and syntax highlighting is built-in too!*
-
-Change the number inside the 'columns' setting to create different types of gallery for all kinds of purposes. You can even click on each image to seamlessly enlarge it on the page.
-
----
-
-### Image carousels
-
-Here's another gallery with only one column, which creates a carousel slide-show instead.
-
-A nice little feature: the carousel only advances when it is in view, so your visitors won't scroll down to find it half way through your images.
-
-<div class="gallery" data-columns="1">
-	<img src="/images/demo/demo-landscape.jpg">
-	<img src="/images/demo/demo-landscape-2.jpg">
-</div>
-
-### What about videos?
-
-Videos are an awesome way to show off your work in a more engaging and personal way, and we’ve made sure they work great on our themes. Just paste an embed code from YouTube or Vimeo, and the theme makes sure it displays perfectly:
-
-<iframe src="https://player.vimeo.com/video/148003889" width="640" height="360" frameborder="0" allowfullscreen></iframe>
-
----
-
-## Pretty cool, huh?
-
-We've packed this theme with powerful features to show off your work.
-
-Why not put them to use on your new portfolio?
-
-<a href="https://jekyllthemes.io/theme/duet-portfolio-jekyll-theme" class="button button--large">Get This Theme</a>

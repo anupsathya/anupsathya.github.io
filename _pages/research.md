@@ -17,7 +17,7 @@ featured_image:
 
 #### Visual Positioning System for Automated Indoor/Outdoor Navigation
 
-**Authors** - Anup S, Abhinav Goal, Suresh Padmanabhan
+**Authors** - Anup S, Abhinav Goel, Suresh Padmanabhan
 
 **Presented at** - IEEE TENCON '17
 
