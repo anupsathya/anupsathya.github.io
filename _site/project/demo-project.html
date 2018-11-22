@@ -16,12 +16,12 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="DopeScope – Anup S">
 	<meta name="twitter:description" content="This page is a demo that shows everything you can do inside portfolio and blog posts.">
-	<meta name="twitter:image:src" content="http://localhost:4000/images/Dope/DopeScope.png">
+	<meta name="twitter:image:src" content="http://localhost:4000/images/Dope/DopeScope.jpg">
 
 	<!-- Facebook OpenGraph -->
 	<meta property="og:title" content="DopeScope – Anup S" />
 	<meta property="og:description" content="This page is a demo that shows everything you can do inside portfolio and blog posts." />
-	<meta property="og:image" content="http://localhost:4000/images/Dope/DopeScope.png" />
+	<meta property="og:image" content="http://localhost:4000/images/Dope/DopeScope.jpg" />
 
 	
 	<!-- Font Embed Code -->
@@ -124,11 +124,13 @@
 
 <p><strong>Role:</strong> Group Leader</p>
 
-<p><strong>Skills picked up:</strong> PCB Layout Design, Embedded Systems Design, DIY Reflow Soldering, <em>Upverter</em> (Layout Design Tool), SoC programming,</p>
+<p><strong>Skills picked up:</strong> PCB Layout Design, Embedded Systems Design, DIY Reflow Soldering, <em>Upverter</em> (Layout Design Tool), SoC programming</p>
 
 <p><strong>Publications:</strong> <a href="https://drive.google.com/file/d/1Cfr6BhwU26pqRAw9NkA7nkEwnq_zkBI3/view">Realtime On-chip Waveform Monitoring</a> at IEEE ICACCI 2018.</p>
 
 <p>DopeScope is an attempt at delivering an inexpensive, un-intimidating scope for Universities in India with poor scientific infrastructure.</p>
+
+<p>DopeScope connects to your phone/computer over WiFi and the browser acts as a display device. The signal processing computation is also done on the browser using its higher computational power rather than relying on an expensive DSP chip and it only costs $16.</p>
 
 <p>An <a href="https://www.aspiringminds.com/sites/default/files/National%20Employability%20Report%20-%20Engineers%20Annual%20Report%202016.pdf">employability report</a> conducted in India, concluded that 80% of all engineers in India are unemployable. These numbers were much lower for the Universities that were ranked outside the top 100. After asking a couple of students in Electrical and Electronics Engineering, about why they felt like they lacked practical skills, the most common answer we got was something like this,</p>
 
@@ -138,21 +140,42 @@
 
 <p>Although scopes are very robust, we couldn’t go around convincing students that it’s actually hard to break one, so we decided to make a cheap one. We also added a smattering of other features to make things interesting for hobbyists.</p>
 
+<p>We started by thinking about how the interaction should work. Existing multimeters or scopes use a proprietary app. We wanted it to work using just the browser on a smartphone or a laptop.</p>
+
+<p>The first step was to build a prototype:</p>
+
+<p><img src="/images/Dope/prototype.jpg" alt="" width="500" /></p>
+
+<p>The prototype was built using an ESP8266. The on-board ADC was used to develop the software.</p>
+
+<p>The next step was to design the PCB itself. The usual option is Eagle CAD, but I had trouble finding the parts that were needed so I used Upverter.</p>
+
+<p><img src="/images/Dope/schematic.png" alt="" /></p>
+
+<p>After designing the schematic, the actual layout design had to be done and the unpopulated board had to be fabricated. To fabricate the board, I relied on OSHPark.</p>
+
+<div class="gallery" data-columns="2">
+	<img src="/images/Dope/hand.jpg" />
+	<img src="/images/Dope/hand2.jpg" />
+</div>
+
+<p>To populate the PCB, as we were using SMDs, usually a reflow oven is used. As we didn’t have access to a reflow oven, we relied on a DIY one made at home. We placed the SMD parts and used a piece of foil on a skillet to reflow the PCB.</p>
+
+<div class="gallery" data-columns="2">
+	<img src="/images/Dope/solder.jpg" />
+	<img src="/images/Dope/reflow.jpg" />
+	<img src="/images/Dope/soldering.jpg" />
+</div>
+
+<p>All done. To make testing easier we used the device in unipolar mode. The device can be easily converted to bipolar mode as the ADC is software configurable.</p>
+
+<p><img src="/images/Dope/final.png" alt="" /></p>
+
 <p>You can find complete details in our dissertation below. You can also download Gerber Files using the button below and order your own boards.</p>
 
 <p>This project was part of our <a href="https://drive.google.com/open?id=1Sa7BmOJW-DWgcIFpFfWgQkamclIgIReD">undergraduate dissertation</a>.</p>
 
 <p><a href="https://drive.google.com/open?id=18vuQufQd7FaBADrs-0w5_414OdRiyDfC" class="button button--light">Gerber Files</a></p>
-
-<div class="gallery" data-columns="4">
-	<img src="/images/Dope/schematic.png" />
-	<img src="/images/Dope/osci.png" />
-	<img src="/images/Dope/solder.jpg" />
-	<img src="/images/Dope/reflow.jpg" />
-	<img src="/images/Dope/prototype.jpg" />
-	<img src="/images/Dope/hand.jpg" />
-	<img src="/images/Dope/hand2.jpg" />
-</div>
 
 
 </section>
