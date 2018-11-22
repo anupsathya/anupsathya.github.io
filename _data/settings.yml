@@ -21,7 +21,7 @@ footer_settings:
   footer_tagline:
 
 grid_settings:
-  overlay_opacity: 0.2
+  overlay_opacity: 0.4
   grid_spacing: 10
 
 contact_settings:
