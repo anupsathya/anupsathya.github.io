@@ -21,7 +21,7 @@ footer_settings:
   footer_tagline:
 
 grid_settings:
-  overlay_opacity: 0.4
+  overlay_opacity: 0.8
   grid_spacing: 125
 
 contact_settings:
@@ -59,7 +59,7 @@ social_settings:
   linkedin_url: 'https://www.linkedin.com/in/anupsathya/'
 
 color_settings:
-  background_color: '#f1f1f1'
+  background_color: '#ffffff'
   background_alt_color: '#f4f5f6'
   text_dark_color: '#2A2F36'
   text_medium_color: '#6C7A89'
