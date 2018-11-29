@@ -20,7 +20,7 @@ footer_settings:
 
 grid_settings:
   overlay_opacity: 0.8
-  grid_spacing: 125
+  grid_spacing: 10
 
 contact_settings:
   form_action: 'https://formspree.io/your@email.com'
