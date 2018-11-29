@@ -3,21 +3,19 @@ basic_settings:
   favicon_image: /images/faceicon.png
 
 header_settings:
-  logo_image: /images/justface.svg
-  logo_width: 40
+  logo_image: /images/facecircle.svg
+  logo_width: 70
 
 menu_settings:
   menu_items:
     - title: 'Projects'
       url: '/'
-    - title: 'Blog'
-      url: '/blog'
     - title: 'Research'
       url: '/research'
 
 footer_settings:
-  logo_image: /images/justface.svg
-  logo_width: 40
+  logo_image: /images/facecircle.svg
+  logo_width: 70
   footer_tagline:
 
 grid_settings:
@@ -59,16 +57,16 @@ social_settings:
   linkedin_url: 'https://www.linkedin.com/in/anupsathya/'
 
 color_settings:
-  background_color: '#f1f1f1'
-  background_alt_color: '#f4f5f6'
-  text_dark_color: '#2A2F36'
-  text_medium_color: '#6C7A89'
-  text_light_color: '#ABB7B7'
-  accent_color: '#F2784B'
+  background_color: '#404040'
+  background_alt_color: '#5B5B5B'
+  text_dark_color: '#CCCBCB'
+  text_medium_color: '#BCB5B5'
+  text_light_color: '#9F9E9E'
+  accent_color: '#FEE247'
   border_color: '#dddddd'
-  overlay_background_color: '#F2784B'
+  overlay_background_color: '#404040'
   overlay_text_color: '#ffffff'
-  overlay_accent_color: '#2A2F36'
+  overlay_accent_color: '#272838'
   error_color: '#D64541'
 
 font_settings:
