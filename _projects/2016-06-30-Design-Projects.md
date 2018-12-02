@@ -43,8 +43,8 @@ This application was designed to improve intercultural communication. Essentiall
 A few landing pages(including logos and stationery) for personal portfolios and industrial companies.
 
 <div class="gallery" data-columns="2">
-	<img src="/images/technocrete.mp4">
-	<img src="/images/abhinav.mp4">
+	<img src="/images/technocrete.png">
+	<img src="/images/abhinav.png">
 </div>
 
 ***
