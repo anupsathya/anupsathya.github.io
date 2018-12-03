@@ -48,3 +48,18 @@ A few landing pages(including logos and stationery) for personal portfolios and 
 </div>
 
 ***
+
+### Design Thinking Booklet
+
+A document developed for the youth-led organisation I was working for, based on the Stanford Design Thinking guidelines.
+
+<div class="gallery" data-columns="2">
+	<img src="/images/design1.jpg">
+	<img src="/images/design2.jpg">
+</div>
+
+***
+
+You can find a smattering of my work on my [Behance](https://www.behance.net/anupsathya) page.
+
+***
