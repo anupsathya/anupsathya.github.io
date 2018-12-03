@@ -11,7 +11,7 @@ featured_image:
 
 **Presented at** -  IEEE ICACCI '18
 
-<a href="https://drive.google.com/file/d/1Cfr6BhwU26pqRAw9NkA7nkEwnq_zkBI3/view" class="button button--light">View Paper</a>
+<a href="https://ieeexplore.ieee.org/document/8554814/" class="button button--light">View Paper</a>
 
 ---
 
