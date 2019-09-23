@@ -19,7 +19,7 @@ featured_image: '/images/Dope/OtherProjects.png'
 	<img src="/images/gimbalfront.JPG">
 </div>
 
-As an addition to our Micro-controller theory course, we built tried to build a 2-axis Gimbal using a Gyroscope, a couple of servos and an 8051 Micro-controller. This was my first attempt at making circuit boards. Although this was barely a working prototype, it worked well to guide my curiosity towards embedded systems and system design in general.
+As an addition to our Micro-controller theory course, we tried to build a 2-axis Gimbal using a Gyroscope, a couple of servos and an 8051 Micro-controller. This was my first attempt at making circuit boards. Although this was barely a working prototype, it worked well to guide my curiosity towards embedded systems and system design in general.
 
 ***
 
