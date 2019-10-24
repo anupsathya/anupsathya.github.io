@@ -51,6 +51,37 @@
 	<!-- Extra Header JS Code -->
 	
 	
+	<script src="js/paper-full.min.js"></script>
+	<script type="text/paperscript" canvas="myCanvas">
+	// Create a Paper.js Path to draw a line into it:
+	var path = new Path();
+	// Give the stroke a color
+	path.strokeColor = 'black';
+	
+	// Move to start and draw a line from there
+	
+	// Note the plus operator on Point objects.
+	// PaperScript does that for us, and much more!
+	
+</script>
+	<script type="text/paperscript" canvas="myCanvas">
+	    var path = new Path();
+	    path.strokeColor = '#4B4B4B';
+
+	    var windowWidth = document.documentElement.clientWidth;
+	    var windowHeight = document.documentElement.clientHeight;
+
+	    for (i=0; i<10; i++) {
+	    	var randomPoint = new Point(Math.round(Math.random() * windowWidth), Math.round(Math.random() * windowHeight));
+	    	path.add(randomPoint);
+	    }
+
+	    function onMouseMove(event) {
+	        path.add(event.point);
+	    }
+
+	    path.smooth('continuous');
+	</script>
 
 </head>
 
@@ -59,6 +90,8 @@
 
 
 	<header class="header">
+
+	
 
 	<div class="wrap">
 
@@ -153,6 +186,15 @@
 
 		</div>
 
+	</div>
+	<div class="canvas">
+		<canvas style="position:absolute;
+		display:block;
+top:0;
+left:0;
+width:100%;
+height:100vmax;
+z-index:-1;" id="myCanvas"></canvas>
 	</div>
 
 
@@ -259,6 +301,7 @@
 </ul>
 
 	</div>
+	
 
 </footer>
 
@@ -271,6 +314,8 @@
 	
 	<!-- Extra Footer JS Code -->
 	
+	
+
 	
 
 
