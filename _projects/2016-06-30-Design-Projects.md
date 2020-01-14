@@ -60,17 +60,6 @@ A document developed for the youth-led organisation I was working for, based on 
 
 ***
 
-<div class="gallery" data-columns="3">
-	<img src="/images/soldier.jpg">
-	<img src="/images/falcon.jpg">
-	<img src="/images/reichstag.jpg">
-	<img src="/images/monkey.jpg">
-	<img src="/images/marlboro.jpg">
-	<img src="/images/cow.jpg">
-</div>
-
-***
-
 You can find a smattering of my work on my [Behance](https://www.behance.net/anupsathya) page.
 
 ***
