@@ -2,19 +2,19 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://localhost:4000/about</loc>
-<lastmod>2020-01-13T23:52:14-05:00</lastmod>
+<lastmod>2020-01-16T20:56:06-05:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/contact</loc>
-<lastmod>2020-01-13T23:52:14-05:00</lastmod>
+<lastmod>2020-01-16T20:56:06-05:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/research</loc>
-<lastmod>2020-01-13T23:52:14-05:00</lastmod>
+<lastmod>2020-01-16T20:56:06-05:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/thanks</loc>
-<lastmod>2020-01-13T23:52:14-05:00</lastmod>
+<lastmod>2020-01-16T20:56:06-05:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/blog/off-grid</loc>
@@ -45,8 +45,12 @@
 <lastmod>2018-06-29T20:00:00-04:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/project/2019-06-30-iq-solutions</loc>
+<lastmod>2019-06-29T20:00:00-04:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/project/2020-01-11-bma</loc>
-<lastmod>2018-06-29T20:00:00-04:00</lastmod>
+<lastmod>2019-07-29T20:00:00-04:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/blog/</loc>
