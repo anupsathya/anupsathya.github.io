@@ -1,6 +1,6 @@
 ---
-title: 'Design Projects'
-subtitle: 'Educational programs, marketing material and some artwork'
+title: ' Other Design Projects'
+subtitle: 'Educational programs, marketing material and print media'
 date: 2018-06-30 00:00:00
 description:
 featured_image: '/images/Dope/DesignProjects.png'
