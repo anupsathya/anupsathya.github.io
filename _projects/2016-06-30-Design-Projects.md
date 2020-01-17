@@ -5,6 +5,25 @@ date: 2018-06-30 00:00:00
 description:
 featured_image: '/images/Dope/DesignProjects.png'
 ---
+
+### PopUp - Small Business Simulator
+
+***Mentor:*** [Michal Jakubowski](https://about.me/michaljakubowski), Kozminski University
+
+***Role:*** Interaction Designer
+
+<div class="gallery" data-columns="3">
+	<img src="/images/PopUp/Welcome.png">
+	<img src="/images/PopUp/MainScreen.png">
+	<img src="/images/PopUp/Login.png">
+	<img src="/images/PopUp/LocationSelection.png">
+	<img src="/images/PopUp/Personal.png">
+	<img src="/images/PopUp/Product.png">
+	<img src="/images/PopUp/SelectedLocation.png">
+	<img src="/images/PopUp/Calendar1.png">
+	<img src="/images/PopUp/Reports.png">
+</div>
+
 ***
 ### Using VR to Reduce Stage Fright
 
