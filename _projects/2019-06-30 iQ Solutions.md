@@ -66,11 +66,11 @@ This diagram acts as a collection of all raw data (yellow notes) gathered during
 The purpose of the Affinity Diagram is to make sense of all data collected and display it in a way that is collaborative, fluid and is the basis for the experience models which will illustrate the findings in a more cohesive manner.
 
 <div class="gallery" data-columns="3">
-	<img src="/images/IQ/1.JPG">
-	<img src="/images/IQ/2.JPG">
-	<img src="/images/IQ/3.JPG">
-	<img src="/images/IQ/4.JPG">
-	<img src="/images/IQ/5.JPG">
+	<img src="/images/IQ/1.jpg">
+	<img src="/images/IQ/2.jpg">
+	<img src="/images/IQ/3.jpg">
+	<img src="/images/IQ/4.jpg">
+	<img src="/images/IQ/5.jpg">
 </div>
 
 *Building the Affinity Diagram*
@@ -80,21 +80,16 @@ The purpose of the Affinity Diagram is to make sense of all data collected and d
 
 The experience models provide a context for the user’s perception of how an ideal system works.
 
+*To maintain confidentiality, these models cannot be displayed here.*
+
 #### A. Sequence Model
 
 The Sequence model attempts to capture users’ actions while doing a task. It helps define the scenarios in which the product will be used.
 The Sequence Model for IQ has been broken down into two main segments or “workflows.” The first detailing the process of setting up for work, completing an inquiry and interacting with the system to provide resolutions for the inquirers’ requests. The second details the process of receiving orders for publications or exhibit items that must be shipped out to the stakeholders from the warehouse.
-
-<div class="gallery" data-columns="2">
-	<img src="/images/IQ/IQ.JPG">
-	<img src="/images/IQ/ware.JPG">
-</div>
  
 #### B. Collaboration
 
 This model will demonstrate the collaboration between various entities (i.e. call center employees, warehouse employees, managers). This model will reveal how the people in the user’s world communicate and coordinate tasks within an ideal IRC system.
-
-![](/images/IQ/collab.jpg)
 
 ## Issues
 
