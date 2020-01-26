@@ -56,32 +56,24 @@
 	// Create a Paper.js Path to draw a line into it:
 	var path = new Path();
 	// Give the stroke a color
-	path.strokeColor = 'black';
+	path.strokeColor = '#4B4B4B';
 	
 	// Move to start and draw a line from there
 	
 	// Note the plus operator on Point objects.
 	// PaperScript does that for us, and much more!
-	
-</script>
-	<script type="text/paperscript" canvas="myCanvas">
-	    var path = new Path();
-	    path.strokeColor = '#4B4B4B';
 
-	    var windowWidth = document.documentElement.clientWidth;
-	    var windowHeight = document.documentElement.clientHeight;
-
-	    for (i=0; i<10; i++) {
-	    	var randomPoint = new Point(Math.round(Math.random() * windowWidth), Math.round(Math.random() * windowHeight));
-	    	path.add(randomPoint);
-	    }
+	var windowWidth = document.documentElement.clientWidth;
+	var windowHeight = document.documentElement.clientHeight;
 
 	    function onMouseMove(event) {
 	        path.add(event.point);
 	    }
 
 	    path.smooth('continuous');
-	</script>
+	
+</script>
+	
 
 </head>
 
