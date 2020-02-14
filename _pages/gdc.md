@@ -52,13 +52,23 @@ One way to think about the main problem to solve is the jobs to be done concept 
 
 Goal 1 and 2 can be solved with the interface that's being built. Goal 3 needs help from the other apps in the Google Suite. 
 
+## Important Assumptions
+
+A main problem while creating tickets is categorizing the tickets adequately. If the number of tickets are really low, categories aren't really necessary but when dealing with a large number of tickets, not having categories affects scalability. 
+
+To get around this issue, the tickets can be categorized automatically using NLP. By analyzing the keywords in the title and the description, the tickets can be categorized and sent to the relevant action-takers. 
+
+I'm assuming that this NLP system exists and that the appropriate tickets are sent to the right action-takers. 
+
+The tickets can also be grouped by location and sent to action-takers that handle those particular locations. 
+
 ## Wireframes
 
 Making wireframes is a good idea as it lets you focus on the interaction design aspect and not worry about the visual design.
 
-This section and the following sections can be divided into the user side and the maintenance worker side. 
+This section and the following sections can be divided into the user side and the action-taker side. 
 
-## User
+## The User
 
 The user's needs essentially boil down to creating tickets easily and knowing the status of the tickets they've created. 
 
@@ -156,6 +166,7 @@ When an action-taker clicks on a ticket in the open section, it moves the ticket
 	<img src="/images/gdc/h3.png">
 </div>
 
+
 ## Google Integration
 
 If this app was integrated into the GSuite for enterprises, a lot of cool features could originate from this. For example, Google Maps could list the problems with the building for people within the organisation so that users can plan their trip accordingly. Google Calendar has a room booking option for meetings which could have a feature that listed the issues with the room when someone tries to schedule something in it. 
@@ -165,3 +176,5 @@ If this app was integrated into the GSuite for enterprises, a lot of cool featur
 Using the data from this app to enhance the experience of other apps in the GSuite can improve the experience for users across the Google app catalog. 
 
 A couple of weeks ago, I booked a room to sit alone and write some code. If I'd known beforehand that the plugpoint wasn't working in that room, I wouldn't have wasted 25 minutes looking for a different place to work. 
+
+
