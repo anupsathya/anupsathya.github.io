@@ -46,8 +46,11 @@ From the 2 small interviews, it was evident that a major problem is getting info
 
 One way to think about the main problem to solve is the jobs to be done concept from the Innovator's Dillemma by Clayton Christensen. What's the job to be done here? 
 
-1. Help users to create tickets to report issues. 
-2. Help maintenance workers to get to the issues more easily. 
+1. Help users to report issues. 
+2. Help maintenance workers to get to the issues. 
+3. Help users make other decisions based on the issues.
+
+Goal 1 and 2 can be solved with the interface that's being built. Goal 3 needs help from the other apps in the Google Suite. 
 
 ## Wireframes
 
