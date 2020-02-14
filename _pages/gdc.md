@@ -152,7 +152,7 @@ The main screen that an action taker would see as soon as they open the app is t
 
 ### Ticket
 
-The action-taker has different expectations from the ticket screen as he/she has to navigate to the problem, but also has to be able to resolve the ticket or add more notes to communicate with the user. This adds a few changes to the interface and it gets rid of the status. 
+The action-taker has different expectations from the ticket screen as they have to navigate to the problem physically, but also resolve the ticket or add more notes to communicate with the user. This adds a few changes to the interface and it gets rid of the ticket status.
 
 When an action-taker clicks on a ticket in the open section, it moves the ticket to the ongoing status as it implies that the action-taker has taken a look at the ticket. This allows the action-taker to control the tickets they want to work on at any given point of time without having to manually notify the user about each stage.
 
