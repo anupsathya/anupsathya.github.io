@@ -102,7 +102,7 @@ The form allows the user to mark a location using GPS if the issue is outdoors, 
 
 One of the major things that I wanted to keep in mind, was setting the priority of a ticket. I initially thought a 1-10 scale would be a good idea as it would allow for better sorting on the action taker side, but having a user decide between 1-10 puts too much cognitive load on the user and it leads to more misclassification. So I decided to go with a LOW, MEDIUM, HIGH slider. 
 
-I did make a new page to add pictures as having the add picture button on the same page looked cluttered. Adding a picture is also optional as users might not be comfortable with taking a picture at a private location like a bathroom.
+I did make a new page to add pictures as having the "add picture" button on the same page looked cluttered. Adding a picture is also optional as users might not be comfortable with taking a picture at a private location like a bathroom.
 
 <div style="width:60%;" class="gallery" data-columns="3">
 	<img src="/images/gdc/newt1.png">
