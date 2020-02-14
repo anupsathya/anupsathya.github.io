@@ -127,7 +127,7 @@ The ticket screen for the user only displays the information with the ability to
 
 ## High Fidelity
 
-I created a few high-fidelity images of the main screens. I chose the material design red because that matches my University's color scheme. 
+I created a few high-fidelity images of the main screens. I chose the Material Design red because that matches my University's color scheme. 
 
 <div style="width:60%;" class="gallery" data-columns="4">
 	<img src="/images/gdc/hf1.png">
