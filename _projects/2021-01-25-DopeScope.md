@@ -1,7 +1,7 @@
 ---
 title: 'DopeScope'
 subtitle: 'An inexpensive scope for hobbyists and learners'
-date: 2018-06-30 00:00:00
+date: 2021-01-25 00:00:00
 description: This page is a demo that shows everything you can do inside portfolio and blog posts.
 featured_image: '/images/Dope/DopeScopeGrey.png'
 ---
