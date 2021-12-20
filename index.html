@@ -22,7 +22,7 @@ featured_image:
 	<div class="wrap">
 		<h4>Selected Work</h4>
 
-		<div class="content-wrap portfolio-wrap" style="margin-top: 1rem;">
+		<div style="margin-top: 1rem;">
 
 			<div class="portfolio-item" style="margin-top:1.8rem;">
 
@@ -78,7 +78,7 @@ featured_image:
 
 		{% endfor %}
 
-		<div class="portfolio-item" style="margin-top:1.8rem;">
+		<div class="portfolio-item" style="margin-top:1.8rem; margin-bottom: 3rem;">
 			
 			<div class="row">
 				<div class="col-md-3">
@@ -96,20 +96,6 @@ featured_image:
 		</div>
 
 	</div>
-	<h4 class="mt">UX Research</h4>
-
-	<div class="row mt">
-		{% for ux in site.ux reversed %}
-		<div class="grid-item col-sm-3">
-			<a href="{{ ux.url }}">
-				<img class="grid-thumbnail" src="{{ ux.featured_image }}">
-				<p class="grid-item-title">{{ ux.title }}</p>
-				<p class="grid-item-subtitle">{{ ux.subtitle }}</p>
-			</a>
-
-		</div>
-		{% endfor %}
-	</div>
 
 	<h4 class="mt">Fun Stuff</h4>
 
@@ -125,6 +111,22 @@ featured_image:
 		</div>
 		{% endfor %}
 	</div>
+
+	<h4 class="mt">UX Research</h4>
+
+	<div class="row mt">
+		{% for ux in site.ux reversed %}
+		<div class="grid-item col-sm-3">
+			<a href="{{ ux.url }}">
+				<img class="grid-thumbnail" src="{{ ux.featured_image }}">
+				<p class="grid-item-title">{{ ux.title }}</p>
+				<p class="grid-item-subtitle">{{ ux.subtitle }}</p>
+			</a>
+
+		</div>
+		{% endfor %}
+	</div>
+
 
 </div>
 
