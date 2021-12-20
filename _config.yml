@@ -10,6 +10,15 @@ collections:
   projects:
     output: true
     permalink: /project/:slug
+  publications:
+    output: true
+    permalink: /publication/:slug
+  fun:
+    output: true
+    permalink: /fun/:slug
+  ux:
+    output: true
+    permalink: /ux/:slug
 
 defaults:
   -
@@ -35,6 +44,24 @@ defaults:
       type: "projects"
     values:
       layout: "project"
+  -
+    scope:
+      path: ""
+      type: "publications"
+    values:
+      layout: "project"
+  -
+    scope:
+      path: ""
+      type: "fun"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "ux"
+    values:
+      layout: "post"
 
 markdown: kramdown
 

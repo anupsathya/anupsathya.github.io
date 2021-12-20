@@ -1,0 +1,22 @@
+---
+layout: project
+title: Fun Stuff
+subtitle: Things that are not work.
+featured_image:
+---
+
+<div class="wrap">
+
+<div class="row mt">
+{% for fun in site.fun reversed %}
+	<div class="grid-item col-sm-3">
+	<a href="{{ fun.url }}">
+	<img class="grid-thumbnail" src="{{ fun.featured_image }}">
+	<p class="grid-item-title">{{ fun.title }}</p>
+	<p class="grid-item-subtitle">{{ fun.subtitle }}</p>
+	</a>
+
+	</div>
+{% endfor %}
+</div>
+</div>

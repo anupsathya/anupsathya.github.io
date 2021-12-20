@@ -25,12 +25,13 @@
 
 	
 	<!-- Font Embed Code -->
-	<link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet">
+	<link href="http://fonts.cdnfonts.com/css/neue-haas-grotesk-text-pro" rel="stylesheet">
 	
 
 	<!-- Styles -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
 
 	<!-- Icons -->
 	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
@@ -53,25 +54,36 @@
 	
 	<script src="js/paper-full.min.js"></script>
 	<script type="text/paperscript" canvas="myCanvas">
-	// Create a Paper.js Path to draw a line into it:
-	var path = new Path();
-	// Give the stroke a color
-	path.strokeColor = '#4B4B4B';
-	
-	// Move to start and draw a line from there
-	
-	// Note the plus operator on Point objects.
-	// PaperScript does that for us, and much more!
+	// Adapted from the following Processing example:
+// http://processing.org/learning/topics/follow3.html
 
-	var windowWidth = document.documentElement.clientWidth;
-	var windowHeight = document.documentElement.clientHeight;
+// The amount of points in the path:
+var points = 25;
 
-	    function onMouseMove(event) {
-	        path.add(event.point);
-	    }
+// The distance between the points:
+var length = 15;
 
-	    path.smooth('continuous');
-	
+var path = new Path({
+	strokeColor: '#333333',
+	strokeWidth: 5,
+	strokeCap: 'round'
+});
+
+var start = view.center / [10, 1];
+for (var i = 0; i < points; i++)
+	path.add(start + new Point(i * length, 0));
+
+function onMouseMove(event) {
+	path.firstSegment.point = event.point;
+	for (var i = 0; i < points - 1; i++) {
+		var segment = path.segments[i];
+		var nextSegment = segment.next;
+		var vector = segment.point - nextSegment.point;
+		vector.length = length;
+		nextSegment.point = segment.point - vector;
+	}
+	path.smooth({ type: 'continuous' });
+}
 </script>
 	
 
@@ -101,11 +113,11 @@
 				<ul class="menu__list">
 					
 					<li class="menu__list__item">
-						<a href="/" class="menu__list__item__link">Projects</a>
+						<a href="/" class="menu__list__item__link">Work.</a>
 					</li>
 					
 					<li class="menu__list__item">
-						<a href="/research" class="menu__list__item__link">Research</a>
+						<a href="/fun" class="menu__list__item__link">Fun.</a>
 					</li>
 					
 				</ul>
@@ -130,148 +142,198 @@
 
 	<div class="wrap">
 
-		<h3>Hi, I'm Anup. I'm an engineer trying to design and build better interactions.</h3>
-		<p style="font-size:18px">I use a blend of <a style="text-decoration:underline;" href="https://en.wikipedia.org/wiki/Human–computer_interaction">HCI</a> research and electronics prototyping to reduce the seams between us and our devices.</p>
-		<p style="font-size:18px">When I'm not working, I <a style="text-decoration:underline;" href="https://www.notion.so/anupsathya/575f2cea9754415396b9cabe33cbe0eb?v=65cefe1d202f4bcda46de6f06348d57d">read</a>, ride motorcycles, or watch British panel shows ad nauseam.</p>
-		<p style="font-size:18px">I also keep track of what I've <a style="text-decoration:underline;" href="https://drive.google.com/open?id=12FBrlFO7diZNMafzVFUqPmQrlLV12HRY">done</a> and I <a style="text-decoration:underline;" href="https://medium.com/@anupsathya">write</a> things that I would read.</p>
-		<p style="font-size:18px">You can see some of my work below.</p>
+		<h4>Hi, I am Anup.</h4>
+		<p>My primary interest is something I'd like to envision and call <em>Tangible Humane Technology</em> &mdash; a combination of <a href="http://gtubicomp2013.pbworks.com/w/file/fetch/65131525/ishii-tangible-bits-chi1997.pdf" style="text-decoration:underline;">Tangible Interaction</a> and<a style="text-decoration:underline;" href="https://ethical.net/glossary/what-is-humane-tech/"> Humane Technology</a>. I hope to achieve this vision by developing novel fabrication procedures that push <a href="https://www.ics.uci.edu/~djp3/classes/2012_09_INF241/papers/Weiser-Computer21Century-SciAm.pdf" style="text-decoration: underline;">ubiquitous computing</a> forward.</p>
+		<p>When I'm not writing website bios I'm probably <a style="text-decoration:underline;" href="https://anupsathyaumd.notion.site/anupsathyaumd/575f2cea9754415396b9cabe33cbe0eb?v=65cefe1d202f4bcda46de6f06348d57d">reading</a>, driving a <a style="text-decoration:underline;" href="/fun/racingsim">racing sim</a>, hanging off an indoor boulder, or learning a new musical instrument.</p>
+		<p style="font-size: 11px"><a style="text-decoration: underline;" href="/files/Anup_CV.pdf">CV</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a style="text-decoration: underline;" href="https://scholar.google.com/citations?user=ObQ1GWsAAAAJ&hl=en">Google Scholar.</a></p>
 	</div>
 
 </section>
 
-<section class="portfolio">
+<section class="portfolio mt">
 
-	<div class="content-wrap portfolio-wrap">
+	<div class="wrap">
+		<h4>Selected Work</h4>
 
-		
+		<div class="content-wrap portfolio-wrap" style="margin-top: 1rem;">
 
-		<div class="portfolio-item">
+			<div class="portfolio-item" style="margin-top:1.8rem;">
 
-			<a class="portfolio-item__link" href="/project/climbot">
+				<div class="row">
+					<div class="col-md-3">
+						<img class="flex-auto" src="/images/calico/TeaserImage2.png">
+					</div>
+					<div class="col-md-9">
+						<div class="venue">Under Review at ACM IMWUT</div>
+						<h6 class="publication-title">Calico: Track Based Interactive and Relocatable Wearables with Fast, Reliable, and Precise Locomotion</h6>
+						<div class="authors"><strong>Anup Sathya</strong>, Jiasheng Li, Huaishu Peng</div>
+					</div>
+				</div>
+			</div>
+
+			
+
+		<!-- <div class="portfolio-item">
+
+			<a class="portfolio-item__link" href="/publication/climbot">
 
 				<div class="portfolio-item__image">
-					<img src="/images/WallIsometric.png" alt="Climbot">
+					<img src="/images/Climbot/MultipleZeyus.jpg" alt="Towards On-the-wall Tangible Interaction: Using Walls as Interactive, Dynamic, and Responsive User Interface">
 				</div>
 
 				<div class="portfolio-item__content">
 					<div class="portfolio-item__info">
-						<h2 class="portfolio-item__title">Climbot</h2>
+						<h2 class="portfolio-item__title">Towards On-the-wall Tangible Interaction: Using Walls as Interactive, Dynamic, and Responsive User Interface</h2>
 						<p class="portfolio-item__subtitle">Walls are boring. Why not enhance them with a little bit of tangible interaction?</p>
 					</div>
 				</div>
 
 			</a>
 
+		</div> -->
+
+		<div class="portfolio-item" style="margin-top:1.8rem;">
+			
+			<div class="row">
+				<div class="col-md-3">
+					<img class="flex-auto" src="/images/Climbot/MultipleZeyus.jpg">
+				</div>
+				<div class="col-md-9">
+					<div class="venue">In Proceedings of CHI EA 2021</div>
+					<h6 class="publication-title"><a class="publication-link" href="/publication/climbot">Towards On-the-wall Tangible Interaction: Using Walls as Interactive, Dynamic, and Responsive User Interface</a></h6>
+					<div class="authors">Zeyu Yan, <strong>Anup Sathya</strong>, Pedro Carvalho, Yongqao Hu, Annan Li, Huaishu Peng</div>
+					<p class="links">
+						<a style="text-decoration:underline;" href="https://doi.org/10.1145/3411763.3451586">DOI</a> 
+					</p>
+				</div>
+			</div>
 		</div>
 
 		
 
-		<div class="portfolio-item">
+		<!-- <div class="portfolio-item">
 
-			<a class="portfolio-item__link" href="/project/dopescope">
+			<a class="portfolio-item__link" href="/publication/dopescope">
 
 				<div class="portfolio-item__image">
-					<img src="/images/Dope/DopeScopeGrey.png" alt="DopeScope">
+					<img src="/images/Dope/final.png" alt="Realtime On-chip Wireless Waveform Monitoring">
 				</div>
 
 				<div class="portfolio-item__content">
 					<div class="portfolio-item__info">
-						<h2 class="portfolio-item__title">DopeScope</h2>
+						<h2 class="portfolio-item__title">Realtime On-chip Wireless Waveform Monitoring</h2>
 						<p class="portfolio-item__subtitle">An inexpensive scope for hobbyists and learners</p>
 					</div>
 				</div>
 
 			</a>
 
+		</div> -->
+
+		<div class="portfolio-item" style="margin-top:1.8rem;">
+			
+			<div class="row">
+				<div class="col-md-3">
+					<img class="flex-auto" src="/images/Dope/final.png">
+				</div>
+				<div class="col-md-9">
+					<div class="venue">In Proceedings of IEEE ICACCI 2018</div>
+					<h6 class="publication-title"><a class="publication-link" href="/publication/dopescope">Realtime On-chip Wireless Waveform Monitoring</a></h6>
+					<div class="authors"><strong>Anup Sathya</strong>, Sowmiya Balaji, Amishi Gupta, Suresh Padmanabhan</div>
+					<p class="links">
+						<a style="text-decoration:underline;" href="https://doi.org/10.1109/ICACCI.2018.8554814">DOI</a> 
+					</p>
+				</div>
+			</div>
 		</div>
 
 		
 
-		<div class="portfolio-item">
-
-			<a class="portfolio-item__link" href="/project/2020-01-11-bma">
-
-				<div class="portfolio-item__image">
-					<img src="/images/BMAIsometric.png" alt="Baltimore Museum of Art">
+		<div class="portfolio-item" style="margin-top:1.8rem;">
+			
+			<div class="row">
+				<div class="col-md-3">
+					<img class="flex-auto" src="/images/graph.png">
 				</div>
-
-				<div class="portfolio-item__content">
-					<div class="portfolio-item__info">
-						<h2 class="portfolio-item__title">Baltimore Museum of Art</h2>
-						<p class="portfolio-item__subtitle">Improving the in-museum guide</p>
-					</div>
+				<div class="col-md-9">
+					<div class="venue">In Proceedings of IEEE TENCON 2017</div>
+					<h6 class="publication-title"><a class="publication-link" href="https://doi.org/10.1109/TENCON.2017.8228008">Visual Positioning System for Automated Indoor/Outdoor Navigation</a></h6>
+					<div class="authors"><strong>Anup Sathya</strong>, Abhinav Goel, Suresh Padmanabhan</div>
+					<p class="links">
+						<a style="text-decoration:underline;" href="https://doi.org/10.1109/TENCON.2017.8228008">DOI</a>
+					</p>
 				</div>
-
-			</a>
-
+			</div>
 		</div>
-
-		
-
-		<div class="portfolio-item">
-
-			<a class="portfolio-item__link" href="/project/2019-06-30-iq-solutions">
-
-				<div class="portfolio-item__image">
-					<img src="/images/IQ/IQF.png" alt="iQ Solutions">
-				</div>
-
-				<div class="portfolio-item__content">
-					<div class="portfolio-item__info">
-						<h2 class="portfolio-item__title">iQ Solutions</h2>
-						<p class="portfolio-item__subtitle">User Research for Contextual Design</p>
-					</div>
-				</div>
-
-			</a>
-
-		</div>
-
-		
-
-		<div class="portfolio-item">
-
-			<a class="portfolio-item__link" href="/project/other-projects">
-
-				<div class="portfolio-item__image">
-					<img src="/images/Dope/OtherProjects.png" alt="Other Projects">
-				</div>
-
-				<div class="portfolio-item__content">
-					<div class="portfolio-item__info">
-						<h2 class="portfolio-item__title">Other Projects</h2>
-						<p class="portfolio-item__subtitle">A few things I&apos;ve built over the years</p>
-					</div>
-				</div>
-
-			</a>
-
-		</div>
-
-		
-
-		<div class="portfolio-item">
-
-			<a class="portfolio-item__link" href="/project/design-projects">
-
-				<div class="portfolio-item__image">
-					<img src="/images/Dope/DesignProjects.png" alt=" Other Design Projects">
-				</div>
-
-				<div class="portfolio-item__content">
-					<div class="portfolio-item__info">
-						<h2 class="portfolio-item__title"> Other Design Projects</h2>
-						<p class="portfolio-item__subtitle">Educational programs, marketing material and print media</p>
-					</div>
-				</div>
-
-			</a>
-
-		</div>
-
-		
 
 	</div>
+	<h4 class="mt">UX Research</h4>
+
+	<div class="row mt">
+		
+		<div class="grid-item col-sm-3">
+			<a href="/ux/2020-01-11-bma">
+				<img class="grid-thumbnail" src="/images/bma/bma-exterior.jpg">
+				<p class="grid-item-title">Baltimore Museum of Art</p>
+				<p class="grid-item-subtitle">Improving the in-museum guide</p>
+			</a>
+
+		</div>
+		
+		<div class="grid-item col-sm-3">
+			<a href="/ux/2019-06-30-iq-solutions">
+				<img class="grid-thumbnail" src="/images/IQ/3-1.jpg">
+				<p class="grid-item-title">iQ Solutions</p>
+				<p class="grid-item-subtitle">User Research for Contextual Design</p>
+			</a>
+
+		</div>
+		
+	</div>
+
+	<h4 class="mt">Fun Stuff</h4>
+
+	<div class="row mt">
+		
+		<div class="grid-item col-sm-3">
+			<a href="/fun/racingsim">
+				<img class="grid-thumbnail" src="/images/sim.jpg">
+				<p class="grid-item-title">Building a racing sim</p>
+				<p class="grid-item-subtitle">by salvaging as many parts as possible</p>
+			</a>
+
+		</div>
+		
+		<div class="grid-item col-sm-3">
+			<a href="/fun/game">
+				<img class="grid-thumbnail" src="/images/SpaceCleanup.png">
+				<p class="grid-item-title">Space Cleanup</p>
+				<p class="grid-item-subtitle">an arcade typing game</p>
+			</a>
+
+		</div>
+		
+		<div class="grid-item col-sm-3">
+			<a href="/fun/fui">
+				<img class="grid-thumbnail" src="/images/fui/Table3.png">
+				<p class="grid-item-title">Fantastical User Interfaces</p>
+				<p class="grid-item-subtitle">attempting to design a furturistic interface</p>
+			</a>
+
+		</div>
+		
+		<div class="grid-item col-sm-3">
+			<a href="/fun/standup">
+				<img class="grid-thumbnail" src="/images/standup.png">
+				<p class="grid-item-title">Visualizing Stand-up Comedy</p>
+				<p class="grid-item-subtitle">using arc diagrams and histograms</p>
+			</a>
+
+		</div>
+		
+	</div>
+
+</div>
 
 </section>
 
@@ -284,8 +346,10 @@
 		display:block;
 top:0;
 left:0;
-width:100%;
-height:100vmax;
+bottom: 0;
+right: 0;
+width: 100%;
+height: 100vh;
 z-index:-1;" id="myCanvas"></canvas>
 	</div>
 

@@ -231,8 +231,10 @@
 	&.active-link {
 		color: $overlay-accent-color;
 
+
 		@include mq(tabletl) {
-			color: $text-dark-color;
+			color: #fff;
+			font-weight: 600;
 			border-color: $accent-color;
 		}
 	}

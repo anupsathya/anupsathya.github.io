@@ -25,12 +25,13 @@
 
 	
 	<!-- Font Embed Code -->
-	<link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet">
+	<link href="http://fonts.cdnfonts.com/css/neue-haas-grotesk-text-pro" rel="stylesheet">
 	
 
 	<!-- Styles -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
 
 	<!-- Icons -->
 	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
@@ -53,25 +54,36 @@
 	
 	<script src="js/paper-full.min.js"></script>
 	<script type="text/paperscript" canvas="myCanvas">
-	// Create a Paper.js Path to draw a line into it:
-	var path = new Path();
-	// Give the stroke a color
-	path.strokeColor = '#4B4B4B';
-	
-	// Move to start and draw a line from there
-	
-	// Note the plus operator on Point objects.
-	// PaperScript does that for us, and much more!
+	// Adapted from the following Processing example:
+// http://processing.org/learning/topics/follow3.html
 
-	var windowWidth = document.documentElement.clientWidth;
-	var windowHeight = document.documentElement.clientHeight;
+// The amount of points in the path:
+var points = 25;
 
-	    function onMouseMove(event) {
-	        path.add(event.point);
-	    }
+// The distance between the points:
+var length = 15;
 
-	    path.smooth('continuous');
-	
+var path = new Path({
+	strokeColor: '#333333',
+	strokeWidth: 5,
+	strokeCap: 'round'
+});
+
+var start = view.center / [10, 1];
+for (var i = 0; i < points; i++)
+	path.add(start + new Point(i * length, 0));
+
+function onMouseMove(event) {
+	path.firstSegment.point = event.point;
+	for (var i = 0; i < points - 1; i++) {
+		var segment = path.segments[i];
+		var nextSegment = segment.next;
+		var vector = segment.point - nextSegment.point;
+		vector.length = length;
+		nextSegment.point = segment.point - vector;
+	}
+	path.smooth({ type: 'continuous' });
+}
 </script>
 	
 
@@ -101,11 +113,11 @@
 				<ul class="menu__list">
 					
 					<li class="menu__list__item">
-						<a href="/" class="menu__list__item__link">Projects</a>
+						<a href="/" class="menu__list__item__link">Work.</a>
 					</li>
 					
 					<li class="menu__list__item">
-						<a href="/research" class="menu__list__item__link">Research</a>
+						<a href="/fun" class="menu__list__item__link">Fun.</a>
 					</li>
 					
 				</ul>
@@ -184,8 +196,10 @@
 		display:block;
 top:0;
 left:0;
-width:100%;
-height:100vmax;
+bottom: 0;
+right: 0;
+width: 100%;
+height: 100vh;
 z-index:-1;" id="myCanvas"></canvas>
 	</div>
 

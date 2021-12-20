@@ -158,6 +158,70 @@ $grid-spacing: {{ site.data.settings.grid_settings.grid_spacing }}px;
 @import "_includes/_blog";
 
 p {
-	text-align: justify;
+	text-align: left;
+	opacity: 0.9;
 	
+}
+
+.menu {
+	margin-top: 2rem;
+}
+
+h1, h2, h3, h4, h5 {
+	color: #fff;
+}
+
+.mt {
+	margin-top: 3rem !important;
+}
+
+.authors {
+	font-size: 0.9rem;
+	margin-top: 0.3rem;
+	opacity: 0.6;
+}
+
+.venue {
+	margin-top: 0.4rem;
+	font-size: 0.8rem;
+	opacity: 0.6;
+}
+
+.publication-title {
+	margin-top: 0.9rem;
+	line-height: 1.2;
+}
+
+.links {
+	margin-top: 0.4rem;
+}
+
+.grid-item {
+	padding-top: 0.4rem;
+	padding-bottom: 0.9rem;
+	a {
+		&:hover {
+			color: #000;
+		}
+	}
+
+	&:hover {
+		background-color: #fff;
+	}
+}
+
+.grid-item-title {
+	margin-top: 0.3rem;
+	font-weight: 600;
+}
+
+.grid-item-subtitle {
+	margin-top: 0rem;
+	opacity: 0.7;
+}
+
+.grid-thumbnail {
+	height: 11rem;
+	width: 100%;
+	object-fit: cover;
 }

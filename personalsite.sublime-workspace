@@ -1,0 +1,264 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"lab",
+				"lab-accent-dark"
+			],
+			[
+				"back",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"tex",
+				"Set Syntax: LaTeX"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"re",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/anupsathya/anupsathya.github.io"
+	],
+	"file_history":
+	[
+		"/Users/anupsathya/Projects/LabSite/smart-lab-website/Gemfile",
+		"/Users/anupsathya/DrupalNew/webform_anonymizer/webform_anonymizer.module",
+		"/Users/anupsathya/DrupalNew/webform_anonymizer/webform_anonymizer.info.yml",
+		"/Users/anupsathya/DrupalNew/webform_anonymizer/README.md",
+		"/Users/anupsathya/DrupalNew/faculty-umd/web/modules/composer/webform/modules/webform_node/webform_node.module",
+		"/Users/anupsathya/DrupalNew/faculty-umd/web/modules/composer/webform/modules/webform_group/webform_group.module",
+		"/Users/anupsathya/DrupalNew/faculty-umd/web/modules/composer/webform/modules/webform_example_element_properties/webform_example_element_properties.module",
+		"/Users/anupsathya/DrupalNew/faculty-umd/web/modules/composer/webform/webform.api.php",
+		"/Users/anupsathya/DrupalNew/faculty-umd/web/sites/default/modules/custom/webform_anonymizer/webform_anonymizer.module",
+		"/Users/anupsathya/DrupalNew/advance-umd/web/themes/custom/umd_bootstrap_sass/js/custom-js.js",
+		"/Users/anupsathya/DrupalNew/faculty-umd/web/modules/composer/webform/modules/webform_access/webform_access.module",
+		"/Users/anupsathya/DrupalNew/faculty-umd/web/modules/composer/webform/modules/webform_bootstrap/tests/modules/webform_bootstrap_test_module/webform_bootstrap_test_module.inc",
+		"/Users/anupsathya/DrupalNew/faculty-umd/web/modules/composer/webform/modules/webform_submission_export_import/tests/modules/webform_submission_export_import_test/webform_submission_export_import_test.module",
+		"/Users/anupsathya/DrupalNew/faculty-umd/web/modules/composer/webform/src/EntitySettings/WebformEntitySettingsGeneralForm.php",
+		"/Users/anupsathya/DrupalNew/faculty-umd/web/modules/composer/webform/modules/webform_demo/webform_demo_application_evaluation/webform_demo_application_evaluation.module",
+		"/Users/anupsathya/DrupalNew/faculty-umd/web/sites/default/modules/custom/webform_anonymizer/config/schema/webform_anonymizer.schema.yml",
+		"/Users/anupsathya/Downloads/webform_anonymous/webform_anonymous.module",
+		"/Users/anupsathya/DrupalNew/faculty-umd/web/sites/default/modules/custom/webform_anonymizer/webform_anonymizer.info.yml",
+		"/Users/anupsathya/DrupalNew/amp-umd/web/themes/custom/umd_bootstrap_sass/css/style.css",
+		"/Users/anupsathya/DrupalNew/amp-umd/web/themes/custom/umd_bootstrap_sass/templates/taxonomy-term--te-project-theme.html.twig",
+		"/Users/anupsathya/DrupalNew/faculty-umd/web/sites/default/modules/custom/webform_anonymizer/webform_anonymizer.links.menu.yml",
+		"/Users/anupsathya/DrupalNew/faculty-umd/web/sites/default/modules/custom/views_bootstrap/views_bootstrap.module",
+		"/Users/anupsathya/DrupalNew/faculty-umd/web/sites/default/modules/custom/webform_anonymizer/src/Controller/AnonymizerController.php",
+		"/Users/anupsathya/DrupalNew/faculty-umd/web/sites/default/modules/custom/views_bootstrap/views_bootstrap.libraries.yml",
+		"/Users/anupsathya/DrupalNew/faculty-umd/web/sites/default/modules/custom/views_bootstrap/views_bootstrap.info.yml",
+		"/Users/anupsathya/DrupalNew/amp-umd/web/themes/custom/umd_bootstrap_sass/templates/node--view--taxonomy-term.html.twig",
+		"/Users/anupsathya/DrupalNew/svp-umd/web/themes/custom/umd_bootstrap_sass/css/style.css",
+		"/Users/anupsathya/DrupalNew/svp-umd/test.php",
+		"/Users/anupsathya/DrupalNew/test.py",
+		"/Users/anupsathya/.bash_profile",
+		"/Users/anupsathya/.zshrc",
+		"/Users/anupsathya/DrupalNew/svp-umd/web/sites/default/settings.php",
+		"/Users/anupsathya/DrupalNew/svp-umd/web/themes/composer/bootstrap_barrio/templates/content/comment.html.twig",
+		"/Users/anupsathya/DrupalNew/amp-umd/web/sites/default/services.pantheon.preproduction.yml",
+		"/Users/anupsathya/Projects/LabSite/zyyan20h.github.io/_config.yml",
+		"/Users/anupsathya/Projects/LabSite/zyyan20h.github.io/_sass/_variables.scss",
+		"/Users/anupsathya/Downloads/_bootswatch.scss",
+		"/Users/anupsathya/Projects/LabSite/zyyan20h.github.io/_sass/_bootstrap_customization.scss",
+		"/Users/anupsathya/Downloads/_variables.scss",
+		"/Users/anupsathya/Projects/LabSite/untitled.sublime-project",
+		"/Users/anupsathya/DrupalNew/amp-umd/web/themes/custom/umd_bootstrap_sass/css/testyles.css",
+		"/Users/anupsathya/DrupalNew/amp-umd/web/themes/custom/umd_bootstrap_sass/umd_bootstrap_sass.libraries.yml"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 98.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"text-dark",
+			"Continue reading",
+			"h6",
+			"h4"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "personalsite.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 282.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 329.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -8,10 +8,10 @@ header_settings:
 
 menu_settings:
   menu_items:
-    - title: 'Projects'
+    - title: 'Work'
       url: '/'
-    - title: 'Research'
-      url: '/research'
+    - title: 'Fun'
+      url: '/fun'
 
 footer_settings:
   logo_image: /images/facecircle.svg
@@ -19,7 +19,7 @@ footer_settings:
   footer_tagline:
 
 grid_settings:
-  overlay_opacity: 0.8
+  overlay_opacity: 1
   grid_spacing: 10
 
 contact_settings:
@@ -57,24 +57,24 @@ social_settings:
   linkedin_url: 'https://www.linkedin.com/in/anupsathya/'
 
 color_settings:
-  background_color: '#404040'
+  background_color: '#111'
   background_alt_color: '#5B5B5B'
   text_dark_color: '#CCCBCB'
-  text_medium_color: '#BCB5B5'
+  text_medium_color: 'rgba(255, 255, 255, 0.9);'
   text_light_color: '#9F9E9E'
-  accent_color: '#FEE247'
+  accent_color: '#FEDD20'
   border_color: '#dddddd'
-  overlay_background_color: '#404040'
+  overlay_background_color: '#000000'
   overlay_text_color: '#ffffff'
   overlay_accent_color: '#272838'
   error_color: '#D64541'
 
 font_settings:
-  font_embed: '<link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet">'
-  title_font: '"Muli", sans-serif'
-  body_font: '"Muli", sans-serif'
-  regular_weight: 400
-  bold_weight: 700
+  font_embed: '<link href="http://fonts.cdnfonts.com/css/neue-haas-grotesk-text-pro" rel="stylesheet">'
+  title_font: 'Neue Haas Grotesk Text Pro, sans-serif'
+  body_font: 'Neue Haas Grotesk Text Pro, sans-serif'
+  regular_weight: 100
+  bold_weight: 600
   site_title:
     small_size: 25
     medium_size: 30
@@ -82,17 +82,17 @@ font_settings:
     weight: 700
     letter_spacing: -0.02
   menu:
-    small_size: 30
-    medium_size: 15
-    large_size: 17
-    weight: 600
+    small_size: 13
+    medium_size: 13
+    large_size: 13
+    weight: 300
     letter_spacing: 0
   grid_item_title:
     small_size: 22
     medium_size: 30
     large_size: 35
-    weight: 700
-    letter_spacing: -0.02
+    weight: 600
+    letter_spacing: 0
   grid_item_subtitle:
     small_size: 15
     medium_size: 17
@@ -100,10 +100,10 @@ font_settings:
     weight: 400
     letter_spacing: 0
   h1:
-    small_size: 25
-    medium_size: 35
-    large_size: 45
-    weight: 700
+    small_size: 22
+    medium_size: 25
+    large_size: 30
+    weight: 600
     letter_spacing: -0.02
     line_height: 1.2
   h2:
@@ -135,17 +135,17 @@ font_settings:
     letter_spacing: 0
     line_height: 1.6
   h6:
-    small_size: 17
-    medium_size: 20
-    large_size: 20
+    small_size: 19
+    medium_size: 19
+    large_size: 19
     weight: 700
     letter_spacing: 0
     line_height: 1.6
   p:
-    small_size: 12
-    medium_size: 17
-    large_size: 19
-    weight: 300
+    small_size: 14
+    medium_size: 14
+    large_size: 14
+    weight: 100
     letter_spacing: 0
     line_height: 1.6
   blockquote:
