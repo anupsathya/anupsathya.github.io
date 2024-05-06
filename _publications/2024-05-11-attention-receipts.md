@@ -11,7 +11,8 @@ doi: 'https://doi.org/10.1145/3613904.3642505'
 
 <div class="container">
 	<div class="embed-container">
-		<iframe width="560" height="315" src="https://www.youtube.com/watch?v=CSlTkCEI_wo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<!-- <iframe width="560" height="315" src="https://www.youtube.com/watch?v=CSlTkCEI_wo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+		<iframe width="1038" height="584" src="https://www.youtube.com/embed/CSlTkCEI_wo" title="Attention Receipts - Mood Video [CHI2024]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 	</div>
 </div>
 
