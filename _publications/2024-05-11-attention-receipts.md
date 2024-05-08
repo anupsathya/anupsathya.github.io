@@ -9,8 +9,16 @@ featured_image: '/images/attention-receipts/1-printer.jpg'
 doi: 'https://doi.org/10.1145/3613904.3642505'
 ---
 
-<div class="container">
-	<div><iframe src="https://player.vimeo.com/video/943870467?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="attention receipts"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<div class="embed-container mt">
+  <iframe
+      src="https://player.vimeo.com/video/943870467"
+      width="500"
+      height="281"
+      frameborder="0"
+      webkitallowfullscreen
+      mozallowfullscreen
+      allowfullscreen>
+  </iframe>
 </div>
 
 <div class="mt-3">
