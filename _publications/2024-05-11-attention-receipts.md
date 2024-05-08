@@ -10,10 +10,7 @@ doi: 'https://doi.org/10.1145/3613904.3642505'
 ---
 
 <div class="container">
-	<div class="embed-container">
-		<!-- <iframe width="560" height="315" src="https://www.youtube.com/watch?v=CSlTkCEI_wo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-		<iframe width="1038" height="584" src="https://www.youtube.com/embed/CSlTkCEI_wo" title="Attention Receipts - Mood Video [CHI2024]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-	</div>
+	<div><iframe src="https://player.vimeo.com/video/943870467?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="attention receipts"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 </div>
 
 <div class="mt-3">
