@@ -1,1 +1,14 @@
+# Dependencies
+node_modules/
+
+# Build output
 _site/
+
+# System files
+.DS_Store
+.sass-cache/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
