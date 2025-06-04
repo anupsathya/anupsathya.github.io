@@ -1,0 +1,59 @@
+---
+layout: base.njk
+title: Publications
+---
+
+<div class="publications-container">
+    <h1>Publications</h1>
+    <br>
+    {# Get unique years #}
+    {% set years = [] %}
+    {% for pub in publications %}
+        {% set year = pub.date.getFullYear() %}
+        {% if year not in years %}
+            {% set years = (years.push(year), years) %}
+        {% endif %}
+    {% endfor %}
+
+    {% for year in years | sort | reverse %}
+    <h2>{{ year }}</h2>
+    <table class="publications-table">
+        <tbody>
+            {% for pub in publications %}
+            {% if pub.date.getFullYear() == year %}
+            <tr class="pub-row">
+                <td class="pub-image">
+                    <div style="width: 100%; aspect-ratio: 16/9; background-color: #e0e0e0; border-radius: 8px;">
+                        <img src="{{ pub.previewImage }}" alt="Preview of {{ pub.title }}" style="width: 100%; aspect-ratio: 16/9; object-fit: cover;">
+                    </div>
+                </td>
+                <td class="pub-content">
+                    <div class="pub-details">
+                        <p>
+                            <span class="pub-conference">
+                                {{ pub.conference }}
+                            </span>
+                            <br>
+                            <span class="pub-title">
+                                <a href="{{ pub.paperUrl }}">{{ pub.title }}</a>
+                            </span>
+                            <br>
+                            <span class="pub-authors">
+                                {{ pub.authors }}
+                            </span>
+                            <br>
+                            <span class="publication-links">
+                                {% if pub.pdfUrl %}
+                                <a href="{{ pub.pdfUrl }}">pdf</a>
+                                {% endif %}
+                            </span>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            {% endif %}
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endfor %}
+</div> 

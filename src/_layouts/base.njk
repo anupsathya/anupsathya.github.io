@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title | default('Anup Sathya') }}</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     {% if page.url == "/" %}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.17/paper-full.min.js"></script>
     {% endif %}
@@ -17,7 +18,7 @@
             </div>
             <nav>
                 <a href="/">Home</a>
-                <a href="/about">About</a>
+                <a href="/publications">Publications</a>
                 <a href="/blog">Blog</a>
             </nav>
         </div>
@@ -38,6 +39,15 @@
     </footer>
 
     <script>
+        // Global variable to store mouse position
+        window.globalMousePos = { x: 0, y: 0 };
+
+        // Track mouse movement across the entire document
+        document.addEventListener('mousemove', function(e) {
+            window.globalMousePos.x = e.clientX;
+            window.globalMousePos.y = e.clientY;
+        });
+
         // Function to get pastel colors from CSS variables
         function getPastelColors() {
             const style = getComputedStyle(document.documentElement);
@@ -142,10 +152,18 @@
         }
 
         function onFrame(event) {
+            // Get the global mouse position and convert it to Paper.js coordinates
+            var canvasRect = document.getElementById('myCanvas').getBoundingClientRect();
+            var globalMousePoint = new Point(
+                window.globalMousePos.x - canvasRect.left,
+                window.globalMousePos.y - canvasRect.top
+            );
+            mousePos = globalMousePoint;
+
             // Update each eye to look at the mouse position
             for (var i = 0; i < eyes.length; i++) {
                 var eye = eyes[i];
-                var pupil = eye.children[1]; // The pupil is now the second child
+                var pupil = eye.children[1];
                 
                 // Calculate vector from eye center to mouse
                 var mouseVector = mousePos - eye.originalCenter;
@@ -162,10 +180,6 @@
                 // Update pupil position relative to its eye center
                 pupil.position = eye.originalCenter.add(offset);
             }
-        }
-
-        function onMouseMove(event) {
-            mousePos = event.point;
         }
     </script>
     {% endif %}

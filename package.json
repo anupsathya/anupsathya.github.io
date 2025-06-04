@@ -1,5 +1,5 @@
 {
-  "name": "website",
+  "name": "anupsathya.github.io",
   "version": "1.0.0",
   "description": "Personal website built with 11ty",
   "main": "index.js",
@@ -10,8 +10,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  },
   "dependencies": {
-    "@11ty/eleventy": "^3.1.1"
+    "airtable": "^0.12.2",
+    "dotenv": "^16.5.0"
   }
 }
