@@ -102,18 +102,18 @@
         var eyeRadius = 15;
         var pupilRadius = 8;
         var rows = 3;
-        var cols = 20;
+        var cols = 21;
         var mousePos = view.center;
 
         // Calculate spacing
-        var spacingX = view.size.width / (cols + 1);
+        var spacingX = view.size.width / (cols + 1) + 2;
         var spacingY = view.size.height / (rows + 1);
 
         // Create grid of eyes
         for (var i = 0; i < rows; i++) {
             for (var j = 0; j < cols; j++) {
-                var x = spacingX * (j + 1);
-                var y = spacingY * (i + 1);
+                var x = spacingX * (j + 1) - 10;
+                var y = spacingY * (i + 1) - 10;
                 
                 // Offset middle row
                 if (i === 1) {
