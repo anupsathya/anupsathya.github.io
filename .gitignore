@@ -3,6 +3,8 @@ node_modules/
 
 # Build output
 _site/
+_site/*
+!_site/.gitkeep
 
 # System files
 .DS_Store

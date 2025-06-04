@@ -122,6 +122,11 @@ main {
     min-height: calc(100vh - 200px);
 }
 
+/* Add padding for non-home pages */
+.page-content main {
+    padding-top: calc(var(--spacing-unit) * 3);
+}
+
 footer {
     text-align: center;
     padding: calc(var(--spacing-unit) * 2) var(--spacing-unit);

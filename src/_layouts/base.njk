@@ -9,7 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.17/paper-full.min.js"></script>
     {% endif %}
 </head>
-<body>
+<body class="{% if page.url != "/" %}page-content{% endif %}">
     <header>
         <div class="header-content">
             <div class="brand">
