@@ -98,9 +98,6 @@
             return colors;
         })();
 
-        // Pick a single random color for this page load
-        var pageColor = colors[Math.floor(Math.random() * colors.length)];
-
         var eyes = [];
         var eyeRadius = 15;
         var pupilRadius = 8;
@@ -120,14 +117,17 @@
                 
                 // Offset middle row
                 if (i === 1) {
-                    x += spacingX / 2;
+                    x -= spacingX / 2;
                 }
                 
-                // Create the outer eye circle (pastel)
+                // Pick a random color for each eye
+                var randomColor = colors[Math.floor(Math.random() * colors.length)];
+                
+                // Create the outer eye circle with random pastel color
                 var eyeOuter = new Path.Circle({
                     center: [x, y],
                     radius: eyeRadius,
-                    fillColor: pageColor
+                    fillColor: randomColor
                 });
 
                 // Create the pupil (white)

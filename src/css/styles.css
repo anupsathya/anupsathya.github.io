@@ -16,10 +16,9 @@
     /* Pastel Color Palette */
     --pastel-1: #FFE2E2; /* Soft Pink */
     --pastel-2: #E2F0FF; /* Soft Blue */
-    --pastel-3: #E7FFE2; /* Soft Green */
-    --pastel-4: #FFE2F3; /* Soft Magenta */
-    --pastel-5: #FFF2E2; /* Soft Orange */
-    --pastel-6: #EFE2FF; /* Soft Purple */
+    --pastel-3: #FFE2F3; /* Soft Magenta */
+    --pastel-4: #FFF2E2; /* Soft Orange */
+    --pastel-5: #EFE2FF; /* Soft Purple */
 }
 
 body {
