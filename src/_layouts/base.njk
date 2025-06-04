@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/css/custom.css">
+    {% if page.url == "/" %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.17/paper-full.min.js"></script>
+    {% endif %}
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="brand">
+                <a href="/"><strong>Anup Sathya</strong></a>
+            </div>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/blog">Blog</a>
+            </nav>
+        </div>
+    </header>
+
+    {% if page.url == "/" %}
+    <div class="canvas-container">
+        <canvas id="myCanvas" resize></canvas>
+    </div>
+    {% endif %}
+    
+    <main>
+        {{ content | safe }}
+    </main>
+
+    <footer>
+        <p>© {{ page.date.getFullYear() }} - Built with 11ty</p>
+    </footer>
+
+    <script>
+        // Function to get pastel colors from CSS variables
+        function getPastelColors() {
+            const style = getComputedStyle(document.documentElement);
+            const colors = [];
+            let i = 1;
+            
+            while (true) {
+                const color = style.getPropertyValue(`--pastel-${i}`).trim();
+                if (!color) break;
+                colors.push(color);
+                i++;
+            }
+            
+            return colors;
+        }
+
+        // Get all nav links
+        const navLinks = document.querySelectorAll('nav a');
+
+        // Add hover listeners to each link
+        navLinks.forEach(link => {
+            link.addEventListener('mouseenter', (e) => {
+                // Pick a random color from the array
+                const colors = getPastelColors();
+                const randomColor = colors[Math.floor(Math.random() * colors.length)];
+                e.target.style.backgroundColor = randomColor;
+            });
+
+            link.addEventListener('mouseleave', (e) => {
+                e.target.style.backgroundColor = 'transparent';
+            });
+        });
+    </script>
+
+    {% if page.url == "/" %}
+    <script type="text/paperscript" canvas="myCanvas">
+        // Get pastel colors from CSS variables
+        var colors = (function() {
+            var style = getComputedStyle(document.documentElement);
+            var colors = [];
+            var i = 1;
+            
+            while (true) {
+                var color = style.getPropertyValue('--pastel-' + i).trim();
+                if (!color) break;
+                colors.push(color);
+                i++;
+            }
+            
+            return colors;
+        })();
+
+        // Pick a single random color for this page load
+        var pageColor = colors[Math.floor(Math.random() * colors.length)];
+
+        var eyes = [];
+        var eyeRadius = 15;
+        var pupilRadius = 8;
+        var rows = 3;
+        var cols = 20;
+        var mousePos = view.center;
+
+        // Calculate spacing
+        var spacingX = view.size.width / (cols + 1);
+        var spacingY = view.size.height / (rows + 1);
+
+        // Create grid of eyes
+        for (var i = 0; i < rows; i++) {
+            for (var j = 0; j < cols; j++) {
+                var x = spacingX * (j + 1);
+                var y = spacingY * (i + 1);
+                
+                // Offset middle row
+                if (i === 1) {
+                    x += spacingX / 2;
+                }
+                
+                // Create the outer eye circle (pastel)
+                var eyeOuter = new Path.Circle({
+                    center: [x, y],
+                    radius: eyeRadius,
+                    fillColor: pageColor
+                });
+
+                // Create the pupil (white)
+                var pupil = new Path.Circle({
+                    center: [x, y],
+                    radius: pupilRadius,
+                    fillColor: 'white'
+                });
+
+                // Group the eye parts together
+                var eye = new Group({
+                    children: [eyeOuter, pupil],
+                    center: [x, y]
+                });
+
+                // Store the original center for each eye
+                eye.originalCenter = new Point(x, y);
+                eyes.push(eye);
+            }
+        }
+
+        function onFrame(event) {
+            // Update each eye to look at the mouse position
+            for (var i = 0; i < eyes.length; i++) {
+                var eye = eyes[i];
+                var pupil = eye.children[1]; // The pupil is now the second child
+                
+                // Calculate vector from eye center to mouse
+                var mouseVector = mousePos - eye.originalCenter;
+                
+                // Calculate the maximum distance the pupil can move from the center
+                var maxDistance = eyeRadius - pupilRadius - 2;
+                
+                // Calculate the direction vector (normalized)
+                var direction = mouseVector.normalize();
+                
+                // Scale the direction vector by the maximum allowed distance
+                var offset = direction.multiply(maxDistance);
+                
+                // Update pupil position relative to its eye center
+                pupil.position = eye.originalCenter.add(offset);
+            }
+        }
+
+        function onMouseMove(event) {
+            mousePos = event.point;
+        }
+    </script>
+    {% endif %}
+</body>
+</html> 
