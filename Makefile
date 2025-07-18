@@ -8,6 +8,9 @@ SRC_DIR = src
 PORT = 8080
 
 # Default target
+.PHONY: all
+all: help
+
 .PHONY: help
 help:
 	@echo "Available commands:"
