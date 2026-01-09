@@ -1,0 +1,362 @@
+:root {
+    --background-color:#FFF;
+    --body-font: 'Erode';
+    --display-font: 'Adelphe Trouble';
+    --text-color: #3A413B;
+    --accent-color: #F96E46;
+    --link-color: #000000;
+    --hover-color: #FFE1C2;
+    --active-color: #000000;
+    --border-color: #000000;
+    --border-radius: 0.8rem;
+    --border-width: 2.5pt;
+    --font-size-small: 1.1rem;
+    --font-size-xs: 0.87rem;
+}
+
+h1  { font-size: 2.202rem; }
+h2  { font-size: 1.958rem; }
+h3  { font-size: 1.74rem; }
+h4  { font-size: 1.547rem; }
+p   { font-size: 1.375rem; }
+small{ font-size: 1.222rem; }
+
+h3 {
+    /* font-weight: 100; */
+    font-style: italic;   
+    font-family: var(--display-font);
+}
+
+h4 {
+    font-style: italic;   
+    font-family: var(--display-font);
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--body-font);
+    font-size: 1.375rem;
+    color: var(--text-color);
+    font-variant-ligatures: common-ligatures;
+    font-variant-numeric: oldstyle-nums;
+    font-feature-settings: "onum" 1;
+}
+
+smallcaps, abbr {
+    font-variant-caps: small-caps;
+    display: inline;
+}
+
+header {
+    align-items: center;
+    max-width: 80rem;
+    margin: 1rem auto;
+    color: var(--text-color);
+}
+
+navbar {
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    max-width: 80rem;
+    margin: 1rem auto;
+}
+
+row {
+    display: flex; 
+    flex-direction: row;
+    padding: 0 1.5rem;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+col {
+    display: flex;
+    /* flex-direction: column; */
+}
+
+col-8 {
+    flex: 2 0 0;
+}
+
+col-8 > *:first-child {
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+}
+
+col-4 {
+    flex: 1 0 0;
+}
+
+col-4 > *:first-child {
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+}
+
+text {
+    display: block;
+    max-width: 40em;
+}
+
+/* Typography */
+
+h1, h2 {
+    font-family: var(--display-font);
+    font-weight: 400;
+    font-style: italic;
+}
+
+h4 {
+    margin: 0 0 0.5rem 0;
+}
+
+p {
+    margin: 0;
+    line-height: 1.1;
+}
+
+p + p {
+    text-indent: 1em;
+    margin-top: 1rem;
+}
+
+pn {
+    hyphens: manual;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-family: var(--display-font);
+    font-weight: 400;
+    font-style: italic;
+    
+    a {
+        text-decoration: none;
+        color: var(--text-color);
+
+        &:visited {
+            color: var(--text-color);
+        }
+    }
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+    font-weight: 400;
+
+    & a {
+        text-decoration: none;
+        /* color: #000; */
+        color: var(--text-color);
+        transition: background-color 0.1s;
+        &:hover {
+            color: var(--text-color);
+            background-color: var(--hover-color);
+            /* text-decoration: underline; */
+            /* text-decoration-color: var(--accent-color); */
+        }
+    }
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+main a {
+    text-decoration: underline;
+    text-decoration-color: var(--accent-color);
+    transition: background-color 0.1s;
+    &::after {
+        content: '°';
+    }
+    &:hover {
+        background-color: var(--hover-color);
+        text-decoration: none;
+    }
+}
+
+news-item {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: var(--font-size-small);
+    margin-bottom: 0.5rem;
+}
+
+news-date {
+    flex: 1 0 0;
+}
+
+news-content {
+    flex: 4 0 0;
+
+    p {
+        font-size: var(--font-size-small);
+        margin: 0;
+    }
+}
+
+publication {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 0.83rem;
+}
+
+margin {
+    text-align: right;
+    flex: 0 0 6rem;
+}
+
+number {
+    font-size: var(--font-size-xs);
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+contribution {
+    font-size: var(--font-size-small);
+    display: block;
+}
+
+venue {
+    font-size: var(--font-size-xs);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+paper-title {
+    display: block;
+}
+
+authors {
+    display: block;
+    font-size: var(--font-size-small);
+}
+
+awards {
+    display: block;
+    font-size: var(--font-size-small);
+    color: var(--accent-color);
+}
+
+links {
+    font-size: var(--font-size-xs);
+    color: gray;
+    display: block;
+}
+
+paper-title {
+    line-height: 1;
+    margin-bottom: 0.25rem;
+    margin-top: 0.25rem;
+}
+
+/* Note content and sidenotes (Tufte-style marginalia) */
+row:has(.note-content) {
+    position: relative;
+    align-items: flex-start;
+}
+
+.note-content {
+    position: relative;
+    /* Add padding-right to make room for sidenotes */
+}
+
+/* Sidenote wrapper keeps the number inline */
+.sidenote-wrapper {
+    position: relative;
+    display: inline;
+}
+
+/* Sidenote number appears as superscript inline */
+.sidenote-number {
+    font-size: 0.75em;
+    vertical-align: super;
+    line-height: 0;
+    text-decoration: none;
+    color: var(--accent-color);
+    margin-left: 0.1em;
+    font-weight: normal;
+}
+
+.sidenote-number:hover {
+    text-decoration: underline;
+}
+
+/* Sidenote content - positioned in margin using CSS float */
+.sidenote {
+    display: block;
+    float: right;
+    clear: right;
+    width: 14rem;
+    margin-right: -15rem; /* Negative margin to position in margin column */
+    margin-left: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: var(--font-size-small);
+    line-height: 1.5;
+    color: var(--text-color);
+    font-weight: normal;
+    padding: 0;
+    padding-left: 1.5rem; /* Space for the number */
+    border: none;
+    background: transparent;
+    position: relative;
+}
+
+/* Display the sidenote number to the left of the content in the margin */
+.sidenote::before {
+    content: attr(data-sidenote);
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-weight: normal;
+    font-size: var(--font-size-small);
+}
+
+/* Ensure sidenotes don't interfere with main content flow */
+.note-content p,
+.note-content li,
+.note-content div {
+    overflow: visible;
+}
+
+/* Margin column for sidenotes - ensure it's wide enough */
+row:has(.note-content) col-4 {
+    position: relative;
+    overflow: visible;
+    min-width: 16rem;
+}
+
+/* On smaller screens, show sidenotes inline below the text */
+@media (max-width: 768px) {
+    .sidenote {
+        position: static;
+        display: block;
+        width: auto;
+        margin-left: 0;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        padding-left: 1rem;
+        left: auto;
+    }
+    
+    .sidenote-wrapper {
+        display: block;
+    }
+    
+    .sidenote-number {
+        display: inline-block;
+        margin-right: 0.25em;
+    }
+}

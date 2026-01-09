@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'Erode';
+    src: url('/css/fonts/Erode-Light.eot?#iefix') format('embedded-opentype'),
+        url('/css/fonts/Erode-Light.woff2') format('woff2'),
+        url('/css/fonts/Erode-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Erode';
+    src: url('/css/fonts/Erode-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('/css/fonts/Erode-LightItalic.woff2') format('woff2'),
+        url('/css/fonts/Erode-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Erode';
+    src: url('/css/fonts/Erode-Italic.eot?#iefix') format('embedded-opentype'),
+        url('/css/fonts/Erode-Italic.woff2') format('woff2'),
+        url('/css/fonts/Erode-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Erode';
+    src: url('/css/fonts/Erode-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/css/fonts/Erode-Medium.woff2') format('woff2'),
+        url('/css/fonts/Erode-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Erode';
+    src: url('/css/fonts/Erode-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/css/fonts/Erode-Regular.woff2') format('woff2'),
+        url('/css/fonts/Erode-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Erode';
+    src: url('/css/fonts/Erode-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('/css/fonts/Erode-MediumItalic.woff2') format('woff2'),
+        url('/css/fonts/Erode-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Erode';
+    src: url('/css/fonts/Erode-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/css/fonts/Erode-SemiboldItalic.woff2') format('woff2'),
+        url('/css/fonts/Erode-SemiboldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Erode';
+    src: url('/css/fonts/Erode-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('/css/fonts/Erode-Semibold.woff2') format('woff2'),
+        url('/css/fonts/Erode-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Erode';
+    src: url('/css/fonts/Erode-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/css/fonts/Erode-BoldItalic.woff2') format('woff2'),
+        url('/css/fonts/Erode-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Erode';
+    src: url('/css/fonts/Erode-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/css/fonts/Erode-Bold.woff2') format('woff2'),
+        url('/css/fonts/Erode-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Adelphe Trouble';
+    src: url('/css/fonts/Adelphe-Trouble-GerminalSemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/css/fonts/Adelphe-Trouble-GerminalSemiBoldItalic.woff2') format('woff2'),
+        url('/css/fonts/Adelphe-Trouble-GerminalSemiBoldItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Adelphe Trouble';
+    src: url('/css/fonts/Adelphe-Trouble-GerminalSemiBold.eot?#iefix') format('embedded-opentype'),
+        url('/css/fonts/Adelphe-Trouble-GerminalSemiBold.woff2') format('woff2'),
+        url('/css/fonts/Adelphe-Trouble-GerminalSemiBold.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Adelphe Trouble';
+    src: url('/css/fonts/Adelphe-Trouble-GerminalRegular.eot?#iefix') format('embedded-opentype'),
+        url('/css/fonts/Adelphe-Trouble-GerminalRegular.woff2') format('woff2'),
+        url('/css/fonts/Adelphe-Trouble-GerminalRegular.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Adelphe Trouble';
+    src: url('/css/fonts/Adelphe-Trouble-GerminalBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/css/fonts/Adelphe-Trouble-GerminalBoldItalic.woff2') format('woff2'),
+        url('/css/fonts/Adelphe-Trouble-GerminalBoldItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Adelphe Trouble';
+    src: url('/css/fonts/Adelphe-Trouble-GerminalBold.eot?#iefix') format('embedded-opentype'),
+        url('/css/fonts/Adelphe-Trouble-GerminalBold.woff2') format('woff2'),
+        url('/css/fonts/Adelphe-Trouble-GerminalBold.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Adelphe Trouble';
+    src: url('/css/fonts/Adelphe-Trouble-GerminalItalic.eot?#iefix') format('embedded-opentype'),
+        url('/css/fonts/Adelphe-Trouble-GerminalItalic.woff2') format('woff2'),
+        url('/css/fonts/Adelphe-Trouble-GerminalItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
