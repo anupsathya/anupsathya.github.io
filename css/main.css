@@ -97,10 +97,10 @@ col-4 > *:first-child {
     margin-bottom: 1rem;
 }
 
-text {
-    display: block;
-    max-width: 40em;
-}
+/* text { */
+/*     display: block; */
+/*     max-width: 40em; */
+/* } */
 
 /* Typography */
 
