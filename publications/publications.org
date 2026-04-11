@@ -1,0 +1,42 @@
+To add publications to the wesbite, I want a simple pipeline to add a
+doi and then generate an org headline under Publications. I can then
+take the data from here and convert it to HTML. Or maybe I'm
+complicating this too much. I just want to be able to paste HTML in a
+certain format from the doi. That way index.html remains the core
+
+* Publications
+** Attention Receipts: Utilizing the Materiality of Receipts to Improve Screen-time Reflection on YouTube
+:PROPERTIES:
+:TITLE:    Attention Receipts: Utilizing the Materiality of Receipts to Improve Screen-time Reflection on YouTube
+:BTYPE:    inproceedings
+:CUSTOM_ID: Sathya_2024
+:AUTHOR:   Sathya, Anup and Nakagaki, Ken
+:YEAR:     2024
+:BOOKTITLE: Proceedings of the CHI Conference on Human Factors in Computing Systems
+:SERIES:   CHI ’24
+:PUBLISHER: ACM
+:MONTH:    may
+:PAGES:    1–16
+:DOI:      10.1145/3613904.3642505
+:URL:      http://dx.doi.org/10.1145/3613904.3642505
+:COLLECTION: CHI ’24
+:END:
+
+** Cybernetic Marionette: Channeling Collective Agency Through a Wearable Robot in a Live Dancer-Robot Duet
+:PROPERTIES:
+:TITLE:    Cybernetic Marionette: Channeling Collective Agency Through a Wearable Robot in a Live Dancer-Robot Duet
+:BTYPE:    inproceedings
+:CUSTOM_ID: Sathya_2025
+:AUTHOR:   Sathya, Anup and Li, Jiasheng and Yan, Zeyu and Fang, Adriane and Kules, Bill and Martin, Jonathan David and Peng, Huaishu
+:YEAR:     2025
+:BOOKTITLE: Proceedings of the 2025 ACM Designing Interactive Systems Conference
+:SERIES:   DIS ’25
+:PUBLISHER: ACM
+:MONTH:    jul
+:PAGES:    3326–3340
+:DOI:      10.1145/3715336.3735828
+:URL:      http://dx.doi.org/10.1145/3715336.3735828
+:COLLECTION: DIS ’25
+:END:
+
+
