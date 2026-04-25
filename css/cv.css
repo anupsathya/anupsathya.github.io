@@ -105,10 +105,33 @@ section h2 {
 
 /* ── Publications ─────────────────────────────────────── */
 
+.pub-year {
+    font-size: 0.85rem;
+    font-weight: 600;
+    opacity: 0.5;
+    margin: 1.25rem 0 0.4rem 0;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid currentColor;
+}
+
 .pub {
+    display: grid;
+    grid-template-columns: 2.5rem 1fr;
+    column-gap: 0.5rem;
+    align-items: first baseline;
+    margin-bottom: 0.6rem;
+}
+
+.pub-number {
+    text-align: right;
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+
+.pub-body {
     display: flex;
     flex-direction: column;
-    margin-bottom: 0.75rem;
+    gap: 0.1rem;
 }
 
 .pub-venue {
@@ -137,7 +160,7 @@ section h2 {
 
 /* ── Dissemination subsections ────────────────────────── */
 
-section h3 {
+section h3:not(.pub-year) {
     font-size: 1rem;
     font-weight: 600;
     margin: 1rem 0 0.5rem 0;
