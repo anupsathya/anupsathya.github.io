@@ -1,0 +1,150 @@
+:root {
+    --body-font: 'Erode';
+    --display-font: 'Adelphe Trouble';
+    --text-color: #3A413B;
+    --accent-color: #F96E46;
+}
+
+/* ── Base ─────────────────────────────────────────────── */
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    font-size: 1rem;
+    font-variant-numeric: oldstyle-nums;
+    font-feature-settings: "onum" 1;
+    margin: 0;
+}
+
+#cv {
+    max-width: 48rem;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+smallcaps, abbr {
+    font-variant-caps: small-caps;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: underline;
+    text-decoration-color: var(--accent-color);
+}
+
+/* ── Header ───────────────────────────────────────────── */
+
+header {
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-family: var(--display-font);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2.4rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.contact {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.9rem;
+}
+
+/* ── Sections ─────────────────────────────────────────── */
+
+section {
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    font-family: var(--display-font);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin: 0 0 0.75rem 0;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid var(--text-color);
+}
+
+/* ── CV entries (education, awards) ──────────────────── */
+
+.entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+}
+
+.entry-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.entry-title {
+    font-size: 0.95rem;
+}
+
+.entry-org {
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+.entry-detail {
+    font-size: 0.82rem;
+    opacity: 0.6;
+    font-style: italic;
+}
+
+.entry-date {
+    font-size: 0.85rem;
+    white-space: nowrap;
+    opacity: 0.7;
+}
+
+/* ── Publications ─────────────────────────────────────── */
+
+.pub {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.75rem;
+}
+
+.pub-venue {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.pub-title {
+    font-size: 0.95rem;
+    line-height: 1.2;
+}
+
+.pub-authors {
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+.pub-award {
+    font-size: 0.85rem;
+    color: var(--accent-color);
+}
+
+.pub-note {
+    opacity: 0.6;
+}
+
+/* ── Dissemination subsections ────────────────────────── */
+
+section h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1rem 0 0.5rem 0;
+}
+
+/* ── Print / PDF ──────────────────────────────────────── */
+
+@media print {
+
+}

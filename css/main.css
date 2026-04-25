@@ -225,6 +225,11 @@ contribution {
     display: block;
 }
 
+paper {
+    flex: 1;
+    min-width: 0;
+}
+
 venue {
     font-size: var(--font-size-xs);
     display: flex;
