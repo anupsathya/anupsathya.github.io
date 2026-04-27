@@ -343,6 +343,51 @@ row:has(.note-content) col-4 {
     min-width: 16rem;
 }
 
+@media (max-width: 768px) {
+    row {
+        flex-direction: column;
+    }
+
+    col-8, col-4 {
+        flex: unset;
+        width: 100%;
+    }
+
+    publication {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    margin {
+        flex: unset;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        gap: 0.5rem;
+        text-align: left;
+    }
+
+    number {
+        margin-bottom: 0;
+    }
+
+    contribution {
+        font-size: var(--font-size-xs);
+    }
+
+    paper-title {
+        font-size: var(--font-size-small);
+    }
+
+    authors, awards {
+        font-size: var(--font-size-xs);
+    }
+
+    p {
+        font-size: var(--font-size-small);
+    }
+}
+
 /* On smaller screens, show sidenotes inline below the text */
 @media (max-width: 768px) {
     .sidenote {
