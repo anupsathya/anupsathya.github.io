@@ -389,6 +389,32 @@ row:has(.note-content) col-4 {
     }
 }
 
+footer {
+    max-width: 80rem;
+    margin: 1rem auto;
+    padding: 0.75rem 1.5rem 0;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.2);
+    font-size: var(--font-size-xs);
+    color: var(--text-color);
+}
+
+footer p {
+    font-size: var(--font-size-xs);
+}
+
+footer a {
+    text-decoration: underline;
+    text-decoration-color: var(--accent-color);
+    transition: background-color 0.1s;
+    &::after {
+        content: '°';
+    }
+    &:hover {
+        background-color: var(--hover-color);
+        text-decoration: none;
+    }
+}
+
 /* On smaller screens, show sidenotes inline below the text */
 @media (max-width: 768px) {
     .sidenote {
