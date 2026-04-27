@@ -119,6 +119,12 @@ p {
     line-height: 1.1;
 }
 
+p.bio-links {
+    font-size: var(--font-size-small);
+    margin-top: 2rem;
+    text-indent: 0;
+}
+
 p + p {
     text-indent: 1em;
     margin-top: 1rem;
