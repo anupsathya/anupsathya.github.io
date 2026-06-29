@@ -166,8 +166,53 @@ section h3:not(.pub-year) {
     margin: 1rem 0 0.5rem 0;
 }
 
+/* ── Mentoring table ──────────────────────────────────── */
+
+.mentoring-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.mentoring-table th {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-weight: 400;
+    opacity: 0.45;
+    text-align: left;
+    padding: 0 1rem 0.35rem 0;
+    border-bottom: 1px solid currentColor;
+}
+
+.mentoring-table td {
+    padding: 0.3rem 1rem 0.1rem 0;
+    vertical-align: baseline;
+}
+
+.mentoring-name {
+    font-size: 0.95rem;
+}
+
+.mentoring-level {
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+.mentoring-outcome {
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+.mentoring-placement {
+    font-size: 0.85rem;
+    opacity: 0.7;
+    font-style: italic;
+}
+
 /* ── Print / PDF ──────────────────────────────────────── */
 
 @media print {
-
+    section h2 {
+        break-after: avoid;
+    }
 }
