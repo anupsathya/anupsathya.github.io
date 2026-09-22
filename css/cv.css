@@ -105,13 +105,15 @@ section h2 {
 
 /* ── Publications ─────────────────────────────────────── */
 
-.pub-year {
-    font-size: 0.85rem;
-    font-weight: 600;
-    opacity: 0.5;
-    margin: 1.25rem 0 0.4rem 0;
-    padding-bottom: 0.2rem;
-    border-bottom: 1px solid currentColor;
+section h3.pub-group {
+    margin-top: 1.5rem;
+}
+
+.pub-group-note {
+    font-size: 0.82rem;
+    opacity: 0.6;
+    font-style: italic;
+    margin: 0 0 0.5rem 0;
 }
 
 .pub {
@@ -160,7 +162,7 @@ section h2 {
 
 /* ── Dissemination subsections ────────────────────────── */
 
-section h3:not(.pub-year) {
+section h3 {
     font-size: 1rem;
     font-weight: 600;
     margin: 1rem 0 0.5rem 0;
@@ -212,7 +214,8 @@ section h3:not(.pub-year) {
 /* ── Print / PDF ──────────────────────────────────────── */
 
 @media print {
-    section h2 {
+    section h2,
+    section h3 {
         break-after: avoid;
     }
 }
